@@ -981,7 +981,7 @@ p.subtitle {
   .experience-container {
     padding: 20px;
     gap: 20px;
-    width: 330px;
+    width: 310px;
   }
 
   .experience-image {
@@ -1148,7 +1148,7 @@ p.subtitle {
 
   .experience-container {
     padding: 15px;
-    max-width: 95%;
+    max-width: 280px;
   }
 
   .experience-text h4 {

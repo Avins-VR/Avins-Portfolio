@@ -251,6 +251,7 @@ button a:hover {
 .square-1 { width: 50px; height: 50px; background-color: #025f53; top: 60%; left: 90%; opacity: 0.2; animation-duration: 5s; animation-delay: 5s; }
 .square-2 { width: 50px; height: 50px; background-color: #ae40b8; top: 60%; left: 40%; opacity: 0.2; animation-duration: 5s; animation-delay: 5s; }
 
+
 .footer {
   background: #0c0c0c;
   padding: 20px;
@@ -666,10 +667,24 @@ button a:hover {
     font-size: 13px;
     padding: 6px 10px;
   }
+    .circle-1 { width: 18px; height: 18px; top: 40%; left: 73%; }
+  .circle-2 { width: 10px; height: 10px; top: 75%; right: 20%; }
+  .circle-3 { width: 25px; height: 25px; bottom: 18%; right: 50%; }
+  .circle-4 { width: 18px; height: 18px; top: 60%; left: 18%; }
+  .circle-5 { width: 15px; height: 15px; top: 40%; left: 30%; }
+  .circle-6 { width: 14px; height: 14px; top: 60%; left: 80%; }
+  .circle-7 { width: 14px; height: 14px; top: 80%; left: 20%; }
+
+  .triangle-1 { border-left: 35px solid transparent; border-right: 35px solid transparent; border-bottom: 35px solid #268d62; top: 20%; left: 4%; transform: scale(0.9); }
+  .triangle-2 { border-left: 35px solid transparent; border-right: 35px solid transparent; border-bottom: 40px solid #54b27a; top: 78%; left: 12%; transform: scale(0.9); }
+
+  .square-1 { width: 35px; height: 35px; top: 50%; left: 78%; }
+  .square-2 { width: 35px; height: 35px; top: 62%; left: 10%; }
   .app-container {
     flex-direction: column;
     align-items: center;
-    padding: 80px 20px 40px 20px;
+    margin-top: 0px;
+    padding: 0px 20px 40px 20px;
   }
 
   .text-section {
@@ -679,16 +694,17 @@ button a:hover {
 
   .text-section h1 {
     font-size: 3.2rem;
-    margin-top: 60px;
+    margin-top: 70px;
   }
 
   .text-section h3,
   .text-section p {
     margin-left: 0;
     text-align: center;
+    margin-bottom: 30px;
   }
   .image-section {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 0;
   }
 
@@ -698,7 +714,7 @@ button a:hover {
   }
 
   .buttons {
-    margin: 30px auto;
+    margin: 20px auto;
     text-align: center;
   }
 
@@ -752,6 +768,20 @@ button a:hover {
   .close-btn {
     margin-right: 30px;
   }
+    .circle-1 { width: 14px; height: 14px; top: 39%; left: 75%; }
+  .circle-2 { width: 9px; height: 9px; top: 72%; right: 18%; }
+  .circle-3 { width: 18px; height: 18px; bottom:26%; right: 40%; }
+  .circle-4 { width: 14px; height: 14px; top: 55%; left: 18%; }
+  .circle-5 { width: 12px; height: 12px; top: 40%; left: 35%; }
+  .circle-6 { width: 12px; height: 12px; top: 55%; left: 80%; }
+  .circle-7 { width: 12px; height: 12px; top: 70%; left: 25%; }
+
+  .triangle-1 { border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 30px solid #268d62; top: 20%; left: 5%; transform: scale(0.8); }
+  .triangle-2 { border-left: 30px solid transparent; border-right: 30px solid transparent; border-bottom: 35px solid #54b27a; top: 75%; left: 12%; transform: scale(0.8); }
+
+  .square-1 { width: 30px; height: 30px; top: 58%; left: 80%; }
+  .square-2 { width: 30px; height: 30px; top: 60%; left: 5%; }
+  
   .text-section h1 {
     font-size: 2.5rem;
     margin-top: 40px;
@@ -768,9 +798,11 @@ button a:hover {
 
   .image-section img {
     max-width: 250px;
+    margin-top: 0px;
   }
 
   button a {
+    margin: 0;
     padding: 12px 28px;
     font-size: 0.95rem;
   }
@@ -902,7 +934,16 @@ button a:hover {
     font-size: 2rem;
     margin-top: 30px;
   }
-
+  .circle-1 { width: 12px; height: 12px; top: 55%; left: 85%; }
+  .circle-3 { width: 18px; height: 18px; right: 50%; bottom: 28%; }
+  .circle-4 { width: 16px; height: 16px; left: 15%; top: 55%; }
+  .circle-2 { width: 8px; height: 8px; top: 70%; right: 20%; }
+  .circle-5 { width: 10px; height: 10px; left: 25%; top: 40%; }
+  .circle-6 { width: 10px; height: 10px; left: 75%; top: 40%; }
+  .circle-7 { width: 10px; height: 10px; left: 20%; top: 68%; }
+  .triangle-1, .triangle-2 { border-left: 25px solid transparent; border-right: 25px solid transparent; border-bottom: 25px solid ;}
+  .square-2 { width: 25px; height: 25px; left: 90%; }
+   .square-1 { width: 25px; height: 25px; left: 5%; }
   .text-section h3 {
     font-size: 1.2rem;
   }
@@ -924,7 +965,7 @@ button a:hover {
   .social-icons a {
     width: 42px;
     height: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .social-icons a i {
@@ -1043,6 +1084,9 @@ button a:hover {
     gap: 12px;
     margin-bottom: 20px;
   }
+  .shape { opacity: 0.3; } 
+  .circle-2, .circle-5, .circle-6, .circle-7 { transform: scale(0.5); }
+  .square-1, .square-2 { transform: scale(0.5); }
   .about-container {
     padding: 20px 15px;
   }
