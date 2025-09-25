@@ -8,6 +8,7 @@ import Experience from "./Experience.jsx";
 import Certificate from "./Certificate.jsx";
 import Contact from "./Contact.jsx";
 import ProfileImage from "./assets/Avins.jpg";
+import Footer from "./Footer.jsx";
 
 
 function App() {
@@ -145,10 +146,7 @@ function App() {
         <Experience />
         <Certificate />
         <Contact />
-
-        <footer className="footer">
-          <p>© {new Date().getFullYear()} Avins VR. All rights reserved.</p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

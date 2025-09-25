@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 
-import BestLuxuryWatches from './assets/BestLuxuryWatches.jpg';
+import Focusflowtask from './assets/Focusflowtask.png';
 import SimpleCalculator from './assets/SimpleCalculator.jpg';
 import Booksky from './assets/Booksky.jpg';
 import BlackjackGame from './assets/BlackjackGame.jpg';
@@ -20,15 +20,6 @@ import SpamShield from './assets/spam.jpg';
 
 function Project() {
   const [projects] = useState([
-    {
-      title: "Best Luxury Watches",
-      date: "2024",
-      description: "Best Luxury Watches is a sleek front-end project showcasing premium timepieces with high-end visuals, minimal design, and smooth interactions for an elegant user experience.",
-      image: BestLuxuryWatches,
-      tech: ['HTML', 'CSS'],
-      demo: "https://avins-vr.github.io/Luxury-Watches/Luxury%20Watch/watches.html",
-      github: "https://github.com/Avins-VR/Luxury-Watches/tree/main/Luxury%20Watch"
-    },
     {
       title: "Simple Calculator",
       date: "2024",
@@ -75,13 +66,13 @@ function Project() {
       github: "https://github.com/Avins-VR/Insta-Clone"
     },
     {
-      title: "First Portfolio Website",
-      date: "2024",
-      description: "My First Portfolio is a personal project showcasing my skills, projects, and journey in a clean, organized digital space, highlighting my passion for design, development, continuous learning, and creating impactful user experiences.",
-      image: PortfolioWebsite,
-      tech: ['HTML', 'CSS'],
-      demo: "https://avins-vr.github.io/First-Portfolio/My%20Portfolio/portfolio.html",
-      github: "https://github.com/Avins-VR/First-Portfolio/tree/main/My%20Portfolio"
+      title: "Focusflow Tasks",
+      date: "2025",
+      description: "Focusflow Tasks is a premium task manager that efficiently tracks daily progress, effortlessly organizes tasks by difficulty and category, and helps users stay focused with important due dates and priorities.",
+      image: Focusflowtask,
+      tech: ['HTML', 'CSS','JS','React'],
+      demo: "https://todo-list-udtd.vercel.app/",
+      github: "https://github.com/Avins-VR/Todo-List"
     },
     {
       title: "Safeguard",

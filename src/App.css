@@ -653,14 +653,63 @@ p.subtitle {
 }
 
 .footer {
-  text-align: center;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  color: #aaa;
-  font-size: 1.1rem;
-  background-color: black;
-  margin-top: 60px;
+  background-color: #000;
+  color: #ccc;
+  padding: 0px 0px;
+  font-family: Arial, sans-serif;
 }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #c2c0c0;
+  margin: 0;
+}
+
+.footer-rights {
+  font-size: 16px;
+  color: #aaa;
+  margin: 14px 0 20px 0;
+}
+
+.footer-icons a {
+  margin-left: 30px;
+  font-size: 25px;
+  color: #9f9e9e;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.footer-icons{
+  margin-right: 50px;
+}
+.footer-divider {
+  border: none;
+  border-top: 1px solid #464646;
+  margin: 15px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 16px;
+  margin: 40px 0 40px 0;
+  color: #aaa;
+}
+
+
 
 @media (max-width: 1200px) {
   .project-section {
@@ -750,6 +799,23 @@ p.subtitle {
 
   .connect-buttons {
     gap: 20px;
+  }
+    .footer-left {
+    margin-left: 30px;
+  }
+  .footer-icons {
+    margin-right: 40px;
+  }
+  .footer-logo {
+    font-size: 26px;
+  }
+  .footer-rights,
+  .footer-bottom {
+    font-size: 15px;
+  }
+  .footer-icons a {
+    font-size: 24px;
+    margin-left: 25px;
   }
 }
 
@@ -922,9 +988,30 @@ p.subtitle {
     grid-template-columns: 1fr; /* Stack buttons vertically */
     gap: 20px;
   }
-   .footer {
-    font-size: 0.9rem;
-    padding: 0px 10px;
+    .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  .footer-left {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .footer-icons {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer-logo {
+    font-size: 24px;
+  }
+  .footer-rights,
+  .footer-bottom {
+    font-size: 14px;
+  }
+  .footer-icons a {
+    font-size: 22px;
+    margin-left: 20px;
   }
 }
 
@@ -1108,6 +1195,23 @@ p.subtitle {
   .availability-container p {
     font-size: 0.9em;
   }
+    .footer-logo {
+    font-size: 22px;
+  }
+  .footer-rights,
+  .footer-bottom {
+    font-size: 13px;
+  }
+  .footer-icons a {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .footer-divider {
+    margin: 10px 0;
+  }
+  .footer-bottom {
+    margin: 30px 0 30px 0;
+  }
 }
 
 /* ✅ Small Mobiles (<=360px) */
@@ -1225,5 +1329,19 @@ p.subtitle {
 
   .availability-container p {
     font-size: 0.85em;
+  }
+  .footer-logo {
+    font-size: 20px;
+  }
+  .footer-rights,
+  .footer-bottom {
+    font-size: 12px;
+  }
+  .footer-icons a {
+    font-size: 18px;
+    margin-left: 12px;
+  }
+  .footer-bottom {
+    margin: 20px 0 20px 0;
   }
 }
