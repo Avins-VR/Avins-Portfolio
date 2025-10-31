@@ -22,7 +22,7 @@ function Contact() {
 
     try {
       await axios.post(
-        `${import.meta.env.VITE_API_URL}/send-message`,
+        "https://avins-portfolio.onrender.com/send-message", // ✅ Updated API
         formData
       );
 
