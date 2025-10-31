@@ -18,19 +18,24 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("⏳ Sending...");
 
     try {
-      await axios.post("http://localhost:5000/send-message", formData);
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/send-message`,
+        formData
+      );
+
       setStatus("✅ Message Sent Successfully!");
       setFormData({ name: "", email: "", message: "" });
-    } catch {
+    } catch (error) {
+      console.error(error);
       setStatus("❌ Failed to send message! Please try again.");
     }
   };
 
   return (
     <section className="Contact" id="contact">
-      {/* Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +45,6 @@ function Contact() {
         Get In Touch
       </motion.h1>
 
-      {/* Subtitle */}
       <motion.p
         className="subtitle"
         initial={{ opacity: 0, y: 20 }}
@@ -53,7 +57,6 @@ function Contact() {
       </motion.p>
 
       <div className="contact-container">
-        {/* Left - Form */}
         <motion.div
           className="left-column"
           initial={{ opacity: 0, x: -50 }}
@@ -94,15 +97,7 @@ function Contact() {
               />
             </motion.div>
 
-            <motion.label
-              htmlFor="message"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              Message:
-            </motion.label>
-
+            <motion.label htmlFor="message">Message:</motion.label>
             <motion.textarea
               name="message"
               rows="4"
@@ -130,7 +125,7 @@ function Contact() {
           </form>
         </motion.div>
 
-        {/* Right – Contact Info */}
+        {/* Right Section — Contact Info (unchanged) */}
         <motion.div
           className="right-column"
           initial={{ opacity: 0, x: 50 }}
@@ -139,13 +134,7 @@ function Contact() {
           viewport={{ once: true }}
         >
           <div className="contact-details-container">
-
-            {/* Email */}
-            <motion.div
-              className="contact-info-item"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
+            <motion.div className="contact-info-item" whileHover={{ scale: 1.05 }}>
               <div className="contact-info-icon-wrapper email-icon">
                 <i className="bi bi-envelope"></i>
               </div>
@@ -157,12 +146,7 @@ function Contact() {
               </div>
             </motion.div>
 
-            {/* Phone */}
-            <motion.div
-              className="contact-info-item"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
+            <motion.div className="contact-info-item" whileHover={{ scale: 1.05 }}>
               <div className="contact-info-icon-wrapper call-icon">
                 <i className="bi bi-telephone"></i>
               </div>
@@ -175,7 +159,6 @@ function Contact() {
             </motion.div>
           </div>
 
-          {/* Social Links */}
           <motion.div
             className="connect-container"
             initial={{ opacity: 0, y: 40 }}
@@ -184,8 +167,7 @@ function Contact() {
             viewport={{ once: true }}
           >
             <h3 className="connect-info-item">
-              <i className="bi bi-globe"></i>
-              <span>Connect With Me</span>
+              <i className="bi bi-globe"></i> <span>Connect With Me</span>
             </h3>
             <div className="connect-buttons">
               <motion.a href="https://www.linkedin.com/in/avinsvr" whileHover={{ scale: 1.1 }}>
@@ -203,7 +185,6 @@ function Contact() {
             </div>
           </motion.div>
 
-          {/* Availability */}
           <motion.div
             className="availability-container"
             initial={{ opacity: 0, y: 40 }}
@@ -211,9 +192,7 @@ function Contact() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <h4>
-              <i className="bi bi-circle-fill"></i> Available for Projects
-            </h4>
+            <h4><i className="bi bi-circle-fill"></i> Available for Projects</h4>
             <p>
               Currently accepting new clients and exciting collaborations.
               Let's build something incredible together!
