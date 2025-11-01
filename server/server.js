@@ -8,55 +8,41 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-// ✅ CORS setup — allows main site + any Netlify preview domain
+const allowedOrigins = [
+  "https://avins-portfolio.netlify.app",
+  "http://localhost:5173"
+];
+
 app.use(
   cors({
     origin: (origin, callback) => {
-      try {
-        if (!origin) return callback(null, true); // allow server/curl
-
-        const allowed = [
-          "https://avins-portfolio.netlify.app",
-          "http://localhost:5173",
-        ];
-
-        const hostname = new URL(origin).hostname;
-
-        if (allowed.includes(origin) || /\.netlify\.app$/.test(hostname)) {
-          return callback(null, true);
-        }
-
-        return callback(new Error("Not allowed by CORS"));
-      } catch (err) {
-        return callback(new Error("Not allowed by CORS"));
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
       }
     },
-    methods: ["GET", "POST", "OPTIONS"],
+    methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
-    credentials: true,
-    preflightContinue: false,
   })
 );
 
-// ✅ Preflight route
-app.options("*", cors());
-
 app.use(express.json());
 
-// ✅ Home route
-app.get('/*', (req, res) => {
-  res.send("Server running...");
+// ✅ Health Check
+app.get("/", (req, res) => {
+  res.send("✅ Backend Live & Running!");
 });
 
-
-// ✅ Contact route
+// ✅ Contact API
 app.post("/send-message", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    // ✅ Gmail transport — correct for Render
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -66,9 +52,9 @@ app.post("/send-message", async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: `Message from ${name}`,
+      subject: `Portfolio Contact: ${name}`,
       html: `
-        <h3>New Contact Message</h3>
+        <h3>New Message</h3>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Message:</b> ${message}</p>
@@ -76,14 +62,19 @@ app.post("/send-message", async (req, res) => {
       replyTo: email,
     });
 
-    return res.json({ success: true, message: "✅ Message sent successfully" });
-  } catch (err) {
-    console.log("❌ Email Error:", err);
-    return res.status(500).json({ success: false, error: "❌ Email failed" });
+    res.json({ success: true, message: "✅ Message Sent Successfully!" });
+  } catch (error) {
+    console.error("❌ Email Error:", error);
+    res.status(500).json({ success: false, error: "❌ Email Failed" });
   }
 });
 
-// ✅ Start server
+// ✅ Fallback Route (Fix for `*` error)
+app.use((req, res) => {
+  res.status(404).send("⚠️ Route Not Found");
+});
+
+// ✅ Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
