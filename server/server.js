@@ -16,18 +16,16 @@ const allowedOrigins = [
 // ✅ CORS Fix (must include credentials)
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true, // ✅ allow cookies/auth/session
+    origin: [
+      "https://avins-portfolio.netlify.app",
+      "http://localhost:5173"
+    ],
+    credentials: true,
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
   })
 );
+
 
 // ✅ Extra header for credentials
 app.use((req, res, next) => {
