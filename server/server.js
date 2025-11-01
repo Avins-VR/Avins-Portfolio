@@ -1,5 +1,6 @@
 import express from "express";
 import nodemailer from "nodemailer";
+import smtpTransport from "nodemailer-smtp-transport";
 import cors from "cors";
 import dotenv from "dotenv";
 
@@ -8,12 +9,7 @@ const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-const allowedOrigins = [
-  "https://avins-portfolio.netlify.app",
-  "http://localhost:5173"
-];
-
-// ✅ CORS Fix (must include credentials)
+// ✅ CORS Settings
 app.use(
   cors({
     origin: [
@@ -26,8 +22,6 @@ app.use(
   })
 );
 
-
-// ✅ Extra header for credentials
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Credentials", "true");
   next();
@@ -35,7 +29,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-// ✅ Health Route
+// ✅ Test Route
 app.get("/", (req, res) => {
   res.send("✅ Backend Live & Running!");
 });
@@ -47,19 +41,22 @@ app.post("/send-message", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-      },
-      tls: {
-        rejectUnauthorized: false
-      }
-    });
+    const transporter = nodemailer.createTransport(
+      smtpTransport({
+        service: "gmail",
+        host: "smtp.gmail.com",
+        port: 587,         // ✅ Works on Render
+        secure: false,     // ✅ Must be false for 587
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS
+        },
+        tls: {
+          rejectUnauthorized: false
+        },
+        connectionTimeout: 20000
+      })
+    );
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
@@ -81,7 +78,7 @@ app.post("/send-message", async (req, res) => {
   }
 });
 
-// ✅ Handle Invalid Routes
+// ✅ Catch-all
 app.use((req, res) => {
   res.status(404).send("⚠️ Route Not Found");
 });
