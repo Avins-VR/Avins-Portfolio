@@ -9,27 +9,27 @@ const app = express();
 // ✅ Use Render port or local fallback
 const PORT = process.env.PORT || 5000;
 
-// ✅ CORS - include your deployed frontend URL
+// ✅ CORS - allow only your frontend
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "http://localhost:3000",
-      "https://avins-portfolio.onrender.com", // backend URL (optional)
-      "https://avins-portfolio.netlify.app" // 🚨 add your frontend here
+      "https://avins-portfolio.netlify.app", // ✅ frontend LIVE
+      "http://localhost:5173",               // ✅ local dev
     ],
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
     credentials: true,
   })
 );
 
 app.use(express.json());
 
-// ✅ Default route to avoid "Cannot GET /"
+// ✅ Home route
 app.get("/", (req, res) => {
-  res.send("✅ Portfolio Backend Live!");
+  res.send("✅ Portfolio Backend Live on Render!");
 });
 
-// ✅ Contact API
+// ✅ Contact route
 app.post("/send-message", async (req, res) => {
   const { name, email, message } = req.body;
 
@@ -55,14 +55,14 @@ app.post("/send-message", async (req, res) => {
       `,
     });
 
-    return res.json({ success: true, message: "Message sent ✅" });
+    return res.json({ success: true, message: "✅ Message sent successfully" });
   } catch (err) {
     console.log("❌ Email Error:", err);
-    return res.status(500).json({ success: false, error: "Email failed ❌" });
+    return res.status(500).json({ success: false, error: "❌ Email failed" });
   }
 });
 
 // ✅ Start server
 app.listen(PORT, () => {
-  console.log(`✅ Server running on port ${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
