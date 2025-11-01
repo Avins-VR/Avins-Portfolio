@@ -1,15 +1,17 @@
 import express from "express";
-import nodemailer from "nodemailer";
-import smtpTransport from "nodemailer-smtp-transport";
 import cors from "cors";
 import dotenv from "dotenv";
+import { Resend } from "resend";
 
 dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT || 5000;
 
-// ✅ CORS Settings
+// ✅ Initialize Resend
+const resend = new Resend(process.env.RESEND_API_KEY);
+
+// ✅ CORS
 app.use(
   cors({
     origin: [
@@ -31,7 +33,7 @@ app.use(express.json());
 
 // ✅ Test Route
 app.get("/", (req, res) => {
-  res.send("✅ Backend Live & Running!");
+  res.send("✅ Backend Live & Running with Resend!");
 });
 
 // ✅ Contact Route
@@ -41,49 +43,38 @@ app.post("/send-message", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    const transporter = nodemailer.createTransport(
-      smtpTransport({
-        service: "gmail",
-        host: "smtp.gmail.com",
-        port: 587,         // ✅ Works on Render
-        secure: false,     // ✅ Must be false for 587
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS
-        },
-        tls: {
-          rejectUnauthorized: false
-        },
-        connectionTimeout: 20000
-      })
-    );
-
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
+    await resend.emails.send({
+      from: process.env.FROM_EMAIL, // onboarding@resend.dev
+      to: "your@gmail.com", // replace with your receiving email
       subject: `Portfolio Contact: ${name}`,
       html: `
-        <h3>New Message Received</h3>
+        <h2>New Message Received</h2>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Message:</b> ${message}</p>
       `,
-      replyTo: email
+      reply_to: email
     });
 
-    return res.json({ success: true, message: "✅ Message Sent Successfully!" });
+    return res.json({
+      success: true,
+      message: "✅ Message Sent Successfully!"
+    });
   } catch (error) {
     console.error("❌ Email Error:", error);
-    return res.status(500).json({ success: false, error: "❌ Email Failed" });
+    return res.status(500).json({
+      success: false,
+      error: "❌ Email Failed"
+    });
   }
 });
 
-// ✅ Catch-all
+// ✅ 404 route
 app.use((req, res) => {
   res.status(404).send("⚠️ Route Not Found");
 });
 
 // ✅ Start Server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
