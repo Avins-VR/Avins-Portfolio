@@ -23,30 +23,36 @@ app.use(
       }
     },
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Content-Type"]
   })
 );
 
 app.use(express.json());
 
-// ✅ Health Check
+// ✅ Health Check Route
 app.get("/", (req, res) => {
   res.send("✅ Backend Live & Running!");
 });
 
-// ✅ Contact API
+// ✅ Contact Form Route
 app.post("/send-message", async (req, res) => {
+  req.setTimeout(20000); // ⏳ Prevent long waiting (20 seconds)
+
   const { name, email, message } = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
+      service: "gmail",
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        pass: process.env.EMAIL_PASS
       },
+      tls: {
+        rejectUnauthorized: false
+      }
     });
 
     await transporter.sendMail({
@@ -54,22 +60,22 @@ app.post("/send-message", async (req, res) => {
       to: process.env.EMAIL_USER,
       subject: `Portfolio Contact: ${name}`,
       html: `
-        <h3>New Message</h3>
+        <h3>New Message Received</h3>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Message:</b> ${message}</p>
       `,
-      replyTo: email,
+      replyTo: email
     });
 
-    res.json({ success: true, message: "✅ Message Sent Successfully!" });
+    return res.json({ success: true, message: "✅ Message Sent Successfully!" });
   } catch (error) {
     console.error("❌ Email Error:", error);
-    res.status(500).json({ success: false, error: "❌ Email Failed" });
+    return res.status(500).json({ success: false, error: "❌ Email Failed" });
   }
 });
 
-// ✅ Fallback Route (Fix for `*` error)
+// ✅ Fallback Route
 app.use((req, res) => {
   res.status(404).send("⚠️ Route Not Found");
 });
