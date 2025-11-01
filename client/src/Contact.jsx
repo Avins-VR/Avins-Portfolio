@@ -17,22 +17,21 @@ function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("⏳ Sending...");
+  e.preventDefault();
+  setStatus("⏳ Sending...");
 
-    try {
-      await axios.post(
-        "https://avins-portfolio.onrender.com/send-message", // ✅ Updated API
-        formData
-      );
+  try {
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
-      setStatus("✅ Message Sent Successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error(error);
-      setStatus("❌ Failed to send message! Please try again.");
-    }
-  };
+    await axios.post(`${API_URL}/send-message`, formData);
+
+    setStatus("✅ Message Sent Successfully!");
+    setFormData({ name: "", email: "", message: "" });
+  } catch (error) {
+    console.error(error);
+    setStatus("❌ Failed to send message! Please try again.");
+  }
+};
 
   return (
     <section className="Contact" id="contact">
