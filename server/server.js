@@ -13,30 +13,38 @@ const allowedOrigins = [
   "http://localhost:5173"
 ];
 
+// ✅ CORS Fix (must include credentials)
 app.use(
   cors({
-    origin: (origin, callback) => {
+    origin: function (origin, callback) {
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
       }
     },
+    credentials: true, // ✅ allow cookies/auth/session
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"]
   })
 );
 
+// ✅ Extra header for credentials
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
 app.use(express.json());
 
-// ✅ Health Check Route
+// ✅ Health Route
 app.get("/", (req, res) => {
   res.send("✅ Backend Live & Running!");
 });
 
-// ✅ Contact Form Route
+// ✅ Contact Route
 app.post("/send-message", async (req, res) => {
-  req.setTimeout(20000); // ⏳ Prevent long waiting (20 seconds)
+  req.setTimeout(20000);
 
   const { name, email, message } = req.body;
 
@@ -75,7 +83,7 @@ app.post("/send-message", async (req, res) => {
   }
 });
 
-// ✅ Fallback Route
+// ✅ Handle Invalid Routes
 app.use((req, res) => {
   res.status(404).send("⚠️ Route Not Found");
 });
