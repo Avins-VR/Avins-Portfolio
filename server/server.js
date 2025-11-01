@@ -45,7 +45,7 @@ app.post("/send-message", async (req, res) => {
   try {
     await resend.emails.send({
       from: process.env.FROM_EMAIL, // onboarding@resend.dev
-      to: "your@gmail.com", // replace with your receiving email
+      to: process.env.MY_EMAIL, // replace with your receiving email
       subject: `Portfolio Contact: ${name}`,
       html: `
         <h2>New Message Received</h2>
