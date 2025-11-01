@@ -44,9 +44,10 @@ app.options("*", cors());
 app.use(express.json());
 
 // ✅ Home route
-app.get("/", (req, res) => {
-  res.send("✅ Portfolio Backend Live on Render!");
+app.get('/*', (req, res) => {
+  res.send("Server running...");
 });
+
 
 // ✅ Contact route
 app.post("/send-message", async (req, res) => {
