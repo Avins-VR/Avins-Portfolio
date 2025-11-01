@@ -13,8 +13,9 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin: [
-      "https://avins-portfolio.netlify.app", // ✅ frontend LIVE
-      "http://localhost:5173",               // ✅ local dev
+      "https://avins-portfolio.netlify.app",
+      "http://localhost:5173",
+      /\.netlify\.app$/  // ✅ allow all Netlify preview URLs
     ],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
