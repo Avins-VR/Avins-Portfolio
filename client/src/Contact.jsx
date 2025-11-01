@@ -21,15 +21,12 @@ function Contact() {
   setStatus("⏳ Sending...");
 
   try {
-    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+    const API_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, "") || "http://localhost:5000";
 
-    await axios.post(
-  `${API_URL}/send-message`,
-  formData,
-  {
-    withCredentials: true // ✅ required for CORS
-  }
-);
+await axios.post(`${API_URL}/send-message`, formData, {
+  withCredentials: true,
+});
+
 
 
     setStatus("✅ Message Sent Successfully!");
