@@ -10,18 +10,27 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // ✅ CORS - allow only your frontend
+const allowedOrigins = [
+  "https://avins-portfolio.netlify.app",
+  "http://localhost:5173"
+];
+
 app.use(
   cors({
-    origin: [
-      "https://avins-portfolio.netlify.app",
-      "http://localhost:5173",
-      /\.netlify\.app$/  // ✅ allow all Netlify preview URLs
-    ],
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
   })
 );
+
+
 
 app.use(express.json());
 
@@ -36,26 +45,26 @@ app.post("/send-message", async (req, res) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
-      replyTo: email,
-      subject: `New Portfolio Message from ${name}`,
-      html: `
-        <h3>New Contact Form Message</h3>
-        <p><b>Name:</b> ${name}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Message:</b><br/>${message}</p>
-      `,
-    });
-
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+   await transporter.sendMail({
+  from: process.env.EMAIL_USER,
+  to: process.env.EMAIL_USER,
+  subject: `Message from ${name}`,
+  html: `
+    <h3>New Contact Message</h3>
+    <p><b>Name:</b> ${name}</p>
+    <p><b>Email:</b> ${email}</p>
+    <p><b>Message:</b> ${message}</p>
+  `,
+  replyTo: email
+});
     return res.json({ success: true, message: "✅ Message sent successfully" });
   } catch (err) {
     console.log("❌ Email Error:", err);
