@@ -5,6 +5,7 @@ import Python from "./assets/Python.png";
 import JS from "./assets/JS.png";
 import HTML from "./assets/HTML.png";
 import CSS from "./assets/CSS.png";
+import tailwind from "./assets/tailwind.png";
 import ReactLogo from "./assets/React.png";
 import nodejs from "./assets/Nodejs.png";
 import Express from "./assets/express-js.png";
@@ -21,6 +22,7 @@ function Techstack() {
     { name: "HTML", image: HTML, alt: "HTML" },
     { name: "CSS", image: CSS, alt: "CSS" },
     { name: "JavaScript", image: JS, alt: "JavaScript" },
+    { name: "Tailwind CSS", image: tailwind, alt: "Tailwind CSS" },
     { name: "React", image: ReactLogo, alt: "React" },
   ]);
   const [backend] = useState([

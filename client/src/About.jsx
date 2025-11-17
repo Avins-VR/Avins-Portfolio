@@ -112,7 +112,7 @@ function About() {
                 icon: "bi bi-hdd-rack",
                 title: "BACKEND DEVELOPMENT",
                 desc: "Designing scalable and efficient server-side applications",
-                tech: ["Node.js", "Python", "SQL", "MongoDB"],
+                tech: ["Node.js", "Express.js", "FastAPI", "MongoDB"],
               },
               {
                 icon: "bi bi-palette",
