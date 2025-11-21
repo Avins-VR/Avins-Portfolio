@@ -16,6 +16,7 @@ import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
 import GitHub from "./assets/github.png";
 import Figma from "./assets/Figma.png";
+import Numpy from "./assets/numpy.png";
 import ThunderClient from "./assets/thunder client.png";
 function Techstack() {
   const [frontend] = useState([
@@ -42,6 +43,7 @@ function Techstack() {
     { name: "Git", image: Git, alt: "Git" },
     { name: "GitHub", image: GitHub, alt: "GitHub" },
     { name: "Figma", image: Figma, alt: "Figma" },
+    { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Thunder Client", image:ThunderClient, alt:"Thunder Client" }
   ]);
 
