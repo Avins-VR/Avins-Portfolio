@@ -12,11 +12,13 @@ import Express from "./assets/express-js.png";
 import sql from "./assets/sql.png";
 import mongodb from "./assets/Mongodb.png";
 import ml from "./assets/ml.jpeg";
+import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
 import GitHub from "./assets/github.png";
 import Figma from "./assets/Figma.png";
 import Numpy from "./assets/numpy.png";
+import Pandas from "./assets/pandas.png";
 import ThunderClient from "./assets/thunder client.png";
 function Techstack() {
   const [frontend] = useState([
@@ -37,6 +39,7 @@ function Techstack() {
   ]);
   const [ai] = useState([
     { name: "Machine Learning", image: ml, alt: "Machine Learning" },
+    { name: "Deep Learning", image: dl, alt: "Deep Learning" },
     { name: "Computer Vision", image: cv, alt: "Computer Vision" },
   ]);
   const [tools] = useState([
@@ -44,6 +47,7 @@ function Techstack() {
     { name: "GitHub", image: GitHub, alt: "GitHub" },
     { name: "Figma", image: Figma, alt: "Figma" },
     { name: "NumPy", image: Numpy, alt: "NumPy" },
+    {name:"Pandas", image:Pandas, alt:"Pandas" },
     {name:"Thunder Client", image:ThunderClient, alt:"Thunder Client" }
   ]);
 

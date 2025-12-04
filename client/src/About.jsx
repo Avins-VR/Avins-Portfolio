@@ -64,7 +64,7 @@ function About() {
           >
             <h2>MY STORY</h2>
             <p>
-              Passionate AI & Data Science student with expertise in Machine Learning, Computer Vision,
+              Passionate AI & Data Science student with expertise in Machine Learning, Deep Learning, Computer Vision,
               Full Stack Development, and user-centered UI/UX design. I build intelligent and scalable 
               applications that solve real-world problems and enhance digital experiences.
             </p>
@@ -122,8 +122,8 @@ function About() {
               },
               {
                 icon: "bi bi-cpu",
-                title: "ML & CV",
-                desc: "Building solutions with ML algorithms and computer vision techniques",
+                title: "ARTIFICIAL INTELLIGENCE",
+                desc: "Developing AI solutions using ML, Deep Learning, and Computer Vision",
                 tech: ["Scikit-learn", "TensorFlow", "OpenCV"],
               },
             ].map((skill, i) => (

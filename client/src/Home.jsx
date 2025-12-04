@@ -60,7 +60,7 @@ function App() {
                   transition={{ duration: 1, delay: 0.5 }}
                 >
                   Passionate Artificial Intelligence & Data Science student with
-                  expertise in Full Stack Development, Machine Learning, Computer
+                  expertise in Full Stack Development, Machine Learning, Deep Learning, Computer
                   Vision, and UI/UX design. I create intelligent, scalable
                   applications that solve real-world problems, drive innovation,
                   and deliver exceptional user experiences.
