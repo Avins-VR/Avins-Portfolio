@@ -10,7 +10,7 @@ import InstagramClone from './assets/InstagramClone.jpg';
 import SafeRoute from './assets/SafeRoute.png';
 import SJIT from './assets/SJIT.jpg';
 import AmbulancePredictor from './assets/Ambulance demend.jpeg';
-import houseprice from './assets/House predection.jpeg';
+import MediConnect from './assets/Medi Connect.png';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
 import StitchPro from './assets/StitchPro.jpg';
@@ -74,6 +74,15 @@ function Project() {
       github: "https://github.com/Avins-VR/Todo-List"
     },
     {
+      title:"Medi Connect",
+      date:"2025",
+      description: "MediConnect is a healthcare app that streamlines patient–doctor interaction with easy appointments, medication tracking, and health record management. Doctors manage schedules, patient details, and weekly consultations effectively. Its clean interface ensures quick, organized medical access.",
+      image:MediConnect,
+      tech: ['Tailwind CSS', 'MERN Stack'],
+      demo: "https://github.com/Avins-VR/Medi-Connect",
+      github: "https://github.com/Avins-VR/Medi-Connect"
+    },
+    {
       title: "SafeRoute",
       date: "2025",
       description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data.",
@@ -119,24 +128,14 @@ function Project() {
       github: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-"
     },
     {
-      title:"Fast Ambulance Demand predictor",
+      title:"AI ambulance demand prediction",
       date:"2025",
-      description: "Fast Ambulance Demand Predictor is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
+      description: "AI ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
       image: AmbulancePredictor,
       tech: ['Python', 'numpy','pandas'],
       demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
       github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
     },
-    {
-      title:"House Price predictor",
-      date:"2025",
-      description: "House Price Predictor is a Machine Learning project that forecasts property prices in Bangalore using features like location, area, and number of rooms, helping buyers and sellers make informed decisions.",
-      image:houseprice,
-      tech: ['Python', 'numpy','pandas','Matplotlib','Seaborn'],
-      demo: "https://github.com/Avins-VR/Bangalore-house-price-predection/blob/main/Bengalure%20House%20price%20predection/Bengalure%20House.ipynb",
-      github: "https://github.com/Avins-VR/Bangalore-house-price-predection"
-    }
-    ,
     {
       title:"Car Parking Detection",
       date:"2025",
