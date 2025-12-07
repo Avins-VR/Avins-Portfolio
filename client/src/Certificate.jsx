@@ -8,6 +8,7 @@ import LinguaskillCert from "./assets/Linguaskill.jpg";
 import DBMS from "./assets/DBMS.png";
 import sqlCert from "./assets/sql and rdbm.png";
 import MongodbCert from "./assets/Mongodb basic.png";
+import MachineLearningCert from "./assets/ML Certificate.png";
 import OCIAIFoundation from "./assets/OCI AI Foundation.png";
 
 function Certificate() {
@@ -36,6 +37,11 @@ function Certificate() {
       title: "SQL and Relational Database",
       issuer: "IBM",
       image: sqlCert,
+    },
+    {
+      title: "Machine Learning (297 hrs)",
+      issuer: "Infosys Springboard",
+      image: MachineLearningCert,
     },
     {
       title: "MongoDB Basic fo Students",
