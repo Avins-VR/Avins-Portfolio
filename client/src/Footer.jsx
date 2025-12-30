@@ -52,7 +52,7 @@ function Footer() {
         {/* Social Icons */}
         <motion.div className="footer-icons flex gap-6" variants={footerItem}>
           <motion.a 
-            href="https://github.com/Avins-VR?tab=repositories" 
+            href="https://github.com/Avins-VR" 
             target="_blank" 
             rel="noreferrer"
             whileHover={iconHover}

@@ -8,6 +8,7 @@ import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
 import ReactLogo from "./assets/React.png";
 import nodejs from "./assets/Nodejs.png";
+import fastapi from "./assets/fast api.png";
 import Express from "./assets/express-js.png";
 import sql from "./assets/sql.png";
 import mongodb from "./assets/Mongodb.png";
@@ -32,6 +33,7 @@ function Techstack() {
     { name: "Python", image: Python, alt: "Python" },
     { name: "Node.js", image: nodejs, alt: "Node.js" },
     { name: "Express", image: Express, alt: "Express" },
+    { name: "Fast API", image: fastapi, alt: "FastAPI" },
   ]);
   const [database] = useState([
     { name: "MongoDB", image: mongodb, alt: "MongoDB" },
