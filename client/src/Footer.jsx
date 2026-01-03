@@ -89,7 +89,7 @@ function Footer() {
       {/* Bottom Section */}
       <motion.div className="footer-bottom text-gray-400 text-center md:text-left" variants={footerItem}>
         <p>
-          Built with React, JavaScript & Tailwind CSS • Designed with passion in Chennai, India
+          Built with Frontend & Backend Technologies • Designed with passion in Chennai, India
         </p>
       </motion.div>
     </motion.footer>
