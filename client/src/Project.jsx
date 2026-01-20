@@ -16,6 +16,7 @@ import Emotion from './assets/emotion dedection.jpeg';
 import StitchPro from './assets/StitchPro.jpg';
 import Restaurant from './assets/Restaurant.jpg';
 import SpamShield from './assets/spam.jpg';
+import AI_Potato from './assets/Potato leaf diesese.jpg';
 
 function Project() {
   const [projects] = useState([
@@ -153,6 +154,15 @@ function Project() {
       tech: ['Python', 'OpenCV','TensorFlow','FER'],
       demo: "https://github.com/Avins-VR/Emotion-Predection-Open-CV/blob/main/Emotion%20predection/emotion-detection%20.ipynb",
       github: "https://github.com/Avins-VR/Emotion-Predection-Open-CV"
+    },
+    {
+      title: "AI-Based Potato Leaf Disease Classification",
+      date: "2026",
+      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using a CNN-based deep learning model for early and accurate disease detection.",
+      image: AI_Potato,
+      tech: ['TensorFlow', 'Matplotlib','CNN'],
+      demo: "https://github.com/Avins-VR/Potato-Disease-Classification/blob/main/Potato%20Disease%20Classification.ipynb",
+      github: "https://github.com/Avins-VR/Potato-Disease-Classification"
     }
   ]);
    const containerVariants = {
