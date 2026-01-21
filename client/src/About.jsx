@@ -124,7 +124,7 @@ function About() {
                 icon: "bi bi-cpu",
                 title: "ARTIFICIAL INTELLIGENCE",
                 desc: "Developing AI solutions using ML, Deep Learning, and Computer Vision",
-                tech: ["Scikit-learn", "TensorFlow", "OpenCV"],
+                tech: ["Scikit-learn", "TensorFlow", "CNN"],
               },
             ].map((skill, i) => (
               <motion.div
