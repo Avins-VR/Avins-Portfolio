@@ -103,6 +103,12 @@ function About() {
           >
             {[
               {
+                icon: "bi bi-cpu",
+                title: "ARTIFICIAL INTELLIGENCE",
+                desc: "Developing AI solutions using ML, Deep Learning, and Computer Vision",
+                tech: ["Scikit-learn", "TensorFlow", "CNN"],
+              },
+              {
                 icon: "bi bi-code-square",
                 title: "FRONTEND DEVELOPMENT",
                 desc: "Building responsive and interactive user interfaces",
@@ -120,12 +126,7 @@ function About() {
                 desc: "Designing intuitive and beautiful user experiences",
                 tech: ["Figma", "Prototyping"],
               },
-              {
-                icon: "bi bi-cpu",
-                title: "ARTIFICIAL INTELLIGENCE",
-                desc: "Developing AI solutions using ML, Deep Learning, and Computer Vision",
-                tech: ["Scikit-learn", "TensorFlow", "CNN"],
-              },
+              
             ].map((skill, i) => (
               <motion.div
                 key={i}

@@ -60,8 +60,8 @@ function App() {
                   transition={{ duration: 1, delay: 0.5 }}
                 >
                   Passionate Artificial Intelligence & Data Science student with
-                  expertise in Full Stack Development, Machine Learning, Deep Learning, Computer
-                  Vision, and UI/UX design. I create intelligent, scalable
+                  expertise in Machine Learning, Deep Learning, Computer
+                  Vision, Full Stack Development and UI/UX design. I create intelligent, scalable
                   applications that solve real-world problems, drive innovation,
                   and deliver exceptional user experiences.
                 </motion.p>
@@ -102,7 +102,7 @@ function App() {
                 whileTap={{ scale: 0.95 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/11AmfEnGhomK9hPHeDlgbM52mOeOnw4QW/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1ZJDVWx4D1riEirS2Uv2hcsVBTQIjWw5-/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
