@@ -1,4 +1,4 @@
-# 🌐 Full Stack Developer Portfolio
+# 🌐 Avins Portfolio
 
 This is my **personal full stack portfolio website** built using modern frontend and backend technologies.  
 It showcases my skills, projects, and includes a **contact feature** that allows users to send messages directly to my email.
