@@ -17,9 +17,100 @@ import StitchPro from './assets/StitchPro.jpg';
 import Restaurant from './assets/Restaurant.jpg';
 import SpamShield from './assets/spam.jpg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
+import Smart_Agri_AI from './assets/Smart Agri AI.jpg';
 
 function Project() {
   const [projects] = useState([
+        {
+      title:"AI-powered ambulance demand prediction",
+      date:"2025",
+      description: "AI-powered ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
+      image: AmbulancePredictor,
+      tech: ['Python', 'numpy','pandas'],
+      demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
+      github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
+    },
+    {
+      title:"AI-powered Car Parking Spot Dedection ",
+      date:"2025",
+      description: "AI-powered Car Parking Spot Dedection  is a Computer Vision project using OpenCV to monitor parking spaces in real time, marking occupied and available spots to optimize parking efficiency, reduce traffic congestion, and improve urban mobility.",
+      image:parking,
+      tech: ['Python', 'OpenCV','NumPy'],
+      demo: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-",
+      github: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-"
+    } ,
+    {
+      title: "AI-Based Potato Leaf Disease Classification",
+      date: "2026",
+      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using a CNN-based deep learning model for early and accurate disease detection.",
+      image: AI_Potato,
+      tech: ['TensorFlow', 'Matplotlib','CNN'],
+      demo: "https://github.com/Avins-VR/Potato-Disease-Classification/blob/main/Potato%20Disease%20Classification.ipynb",
+      github: "https://github.com/Avins-VR/Potato-Disease-Classification"
+    },
+    {
+      title: "Smart Agri AI",
+      date: "2026",
+      description: "Developed Smart Agri-AI, a multi-modal deep learning system using CNN-based fusion of leaf, soil, weather, and temperature data to accurately detect crop nutrient deficiencies with interpretable,explainable,and adaptive real-time predictions for improved precision agriculture decision-making and yield optimization.",
+      image: Smart_Agri_AI,
+      tech: ['TensorFlow', 'Transformer','CNN'],
+      demo: "https://github.com/Avins-VR/Smart-Agri-AI",
+      github: "https://github.com/Avins-VR/Smart-Agri-AI"
+    },
+    {
+      title: "SafeRoute",
+      date: "2025",
+      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data.",
+      image: SafeRoute,
+      tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
+      demo: "https://saferoute-blze.onrender.com/",
+      github: "https://github.com/Avins-VR/SafeRoute"
+    },
+    {
+      title:"Medi Connect",
+      date:"2025",
+      description: "MediConnect is a healthcare app that streamlines patient–doctor interaction with easy appointments, medication tracking, and health record management. Doctors manage schedules, patient details, and weekly consultations effectively. Its clean interface ensures quick, organized medical access.",
+      image:MediConnect,
+      tech: ['Tailwind CSS', 'MERN Stack'],
+      demo: "https://github.com/Avins-VR/Medi-Connect",
+      github: "https://github.com/Avins-VR/Medi-Connect"
+    },
+    {
+      title:"Emotion Detector",
+      date:"2025",
+      description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience.",
+      image:Emotion,
+      tech: ['Python', 'OpenCV','TensorFlow','FER'],
+      demo: "https://github.com/Avins-VR/Emotion-Predection-Open-CV/blob/main/Emotion%20predection/emotion-detection%20.ipynb",
+      github: "https://github.com/Avins-VR/Emotion-Predection-Open-CV"
+    },
+    {
+      title:"SpamShield",
+      date:"2025",
+      description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience.",
+      image:SpamShield,
+      tech: ['Python', 'numpy','pandas'],
+      demo: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-/blob/main/Naive%20bayes%20Email%20spam/Email%20Spam.ipynb",
+      github: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-"
+    },
+    {
+      title: "Focusflow Tasks",
+      date: "2025",
+      description: "Focusflow Tasks is a premium task manager that efficiently tracks daily progress, effortlessly organizes tasks by difficulty and category, and helps users stay focused with important due dates and priorities.",
+      image: Focusflowtask,
+      tech: ['HTML', 'CSS','JS','React'],
+      demo: "https://todo-list-udtd.vercel.app/",
+      github: "https://github.com/Avins-VR/Todo-List"
+    },
+    {
+      title: "Instagram Clone",
+      date: "2025",
+      description: "Instagram Clone is an interactive project replicating key features and aesthetics of Instagram, with a clean UI, responsive layouts, and smooth user interactions for a social media-like experience.",
+      image: InstagramClone,
+      tech: ['HTML', 'CSS', 'JavaScript', 'React'],
+      demo: "https://insta-clone-three-cyan.vercel.app/",
+      github: "https://github.com/Avins-VR/Insta-Clone"
+    },
     {
       title: "Simple Calculator",
       date: "2024",
@@ -57,42 +148,6 @@ function Project() {
       github: "https://github.com/Avins-VR/Mini-Mart/tree/main/Mini%20Mart"
     },
     {
-      title: "Instagram Clone",
-      date: "2025",
-      description: "Instagram Clone is an interactive project replicating key features and aesthetics of Instagram, with a clean UI, responsive layouts, and smooth user interactions for a social media-like experience.",
-      image: InstagramClone,
-      tech: ['HTML', 'CSS', 'JavaScript', 'React'],
-      demo: "https://insta-clone-three-cyan.vercel.app/",
-      github: "https://github.com/Avins-VR/Insta-Clone"
-    },
-    {
-      title: "Focusflow Tasks",
-      date: "2025",
-      description: "Focusflow Tasks is a premium task manager that efficiently tracks daily progress, effortlessly organizes tasks by difficulty and category, and helps users stay focused with important due dates and priorities.",
-      image: Focusflowtask,
-      tech: ['HTML', 'CSS','JS','React'],
-      demo: "https://todo-list-udtd.vercel.app/",
-      github: "https://github.com/Avins-VR/Todo-List"
-    },
-    {
-      title:"Medi Connect",
-      date:"2025",
-      description: "MediConnect is a healthcare app that streamlines patient–doctor interaction with easy appointments, medication tracking, and health record management. Doctors manage schedules, patient details, and weekly consultations effectively. Its clean interface ensures quick, organized medical access.",
-      image:MediConnect,
-      tech: ['Tailwind CSS', 'MERN Stack'],
-      demo: "https://github.com/Avins-VR/Medi-Connect",
-      github: "https://github.com/Avins-VR/Medi-Connect"
-    },
-    {
-      title: "SafeRoute",
-      date: "2025",
-      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data.",
-      image: SafeRoute,
-      tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
-      demo: "https://saferoute-blze.onrender.com/",
-      github: "https://github.com/Avins-VR/SafeRoute"
-    },
-    {
       title: "SJIT Portal Clone Design",
       date:"2024",
       description: "SJIT Portal Clone Design is a modern UI/UX project reimagining the student and faculty portal, featuring clean navigation, intuitive layout, and enhanced user flow for simplified access to academic records and campus services.",
@@ -119,51 +174,6 @@ function Project() {
       demo: "https://www.figma.com/proto/b1MNJlzZVFsdarbiJCX6IV/TastyHaven-Restaurent?node-id=3-2&starting-point-node-id=3%3A2&scaling=scale-down-width&content-scaling=fixed",
       github: "https://github.com/Avins-VR/TASTY_HEAVAN?tab=readme-ov-file"
     },
-    {
-      title:"SpamShield",
-      date:"2025",
-      description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience.",
-      image:SpamShield,
-      tech: ['Python', 'numpy','pandas'],
-      demo: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-/blob/main/Naive%20bayes%20Email%20spam/Email%20Spam.ipynb",
-      github: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-"
-    },
-    {
-      title:"AI ambulance demand prediction",
-      date:"2025",
-      description: "AI ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
-      image: AmbulancePredictor,
-      tech: ['Python', 'numpy','pandas'],
-      demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
-      github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
-    },
-    {
-      title:"Car Parking Detection",
-      date:"2025",
-      description: "Car Parking Detection is a Computer Vision project using OpenCV to monitor parking spaces in real time, marking occupied and available spots to optimize parking efficiency, reduce traffic congestion, and improve urban mobility.",
-      image:parking,
-      tech: ['Python', 'OpenCV','NumPy'],
-      demo: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-",
-      github: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-"
-    } ,
-    {
-      title:"Emotion Detector",
-      date:"2025",
-      description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience.",
-      image:Emotion,
-      tech: ['Python', 'OpenCV','TensorFlow','FER'],
-      demo: "https://github.com/Avins-VR/Emotion-Predection-Open-CV/blob/main/Emotion%20predection/emotion-detection%20.ipynb",
-      github: "https://github.com/Avins-VR/Emotion-Predection-Open-CV"
-    },
-    {
-      title: "AI-Based Potato Leaf Disease Classification",
-      date: "2026",
-      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using a CNN-based deep learning model for early and accurate disease detection.",
-      image: AI_Potato,
-      tech: ['TensorFlow', 'Matplotlib','CNN'],
-      demo: "https://github.com/Avins-VR/Potato-Disease-Classification/blob/main/Potato%20Disease%20Classification.ipynb",
-      github: "https://github.com/Avins-VR/Potato-Disease-Classification"
-    }
   ]);
    const containerVariants = {
     hidden: { opacity: 0 },
