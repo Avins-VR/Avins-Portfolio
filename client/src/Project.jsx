@@ -17,10 +17,29 @@ import StitchPro from './assets/StitchPro.jpg';
 import Restaurant from './assets/Restaurant.jpg';
 import SpamShield from './assets/spam.jpg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
-import Smart_Agri_AI from './assets/Smart Agri AI.jpg';
+import Smart_Agri_AI from './assets/Smart Agri AI.png';
+import Nutrient_Deficiency from './assets/Nutrient Deficiency.avif';
 
 function Project() {
   const [projects] = useState([
+     {
+      title: "Smart Agri AI",
+      date: "2026",
+      description: "Developed Smart Agri AI, an AI-powered agriculture system for remote farm monitoring using drone imagery and virtual sensor data. Built multimodal deep learning models to analyze crop health, detect nutrient deficiencies, identify growth stages, and predict irrigation and weather impact, delivering intelligent advisory and crop health insights for data-driven precision farming.",
+      image: Smart_Agri_AI,
+      tech: ['Multimodal AI','Python'],
+      demo: "https://github.com/Avins-VR/Smart-Agri-AI",
+      github: "https://github.com/Avins-VR/Smart-Agri-AI"
+    },
+    {
+      title: "Multimodal Crop Diagnosis with NLP Chatbot ",
+      date: "2026",
+      description: "Built a multimodal AI system for crop nutrient diagnosis using leaf imagery, soil (pH, moisture, NPK), and weather data. Detects deficiency stages, provides recommendations with confidence, and integrates an NLP chatbot with self-learning feedback to improve accuracy and support precision agriculture for optimized fertilizer use and improved crop productivity.",
+      image: Nutrient_Deficiency,
+      tech: ['Multimodal AI', 'NLP'],
+      demo: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot",
+      github: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot"
+    },
         {
       title:"AI-powered ambulance demand prediction",
       date:"2025",
@@ -49,15 +68,6 @@ function Project() {
       github: "https://github.com/Avins-VR/Potato-Disease-Classification"
     },
     {
-      title: "Smart Agri AI",
-      date: "2026",
-      description: "Developed Smart Agri-AI, a multi-modal deep learning system using CNN-based fusion of leaf, soil, weather, and temperature data to accurately detect crop nutrient deficiencies with interpretable,explainable,and adaptive real-time predictions for improved precision agriculture decision-making and yield optimization.",
-      image: Smart_Agri_AI,
-      tech: ['TensorFlow', 'Transformer','CNN'],
-      demo: "https://github.com/Avins-VR/Smart-Agri-AI",
-      github: "https://github.com/Avins-VR/Smart-Agri-AI"
-    },
-    {
       title: "SafeRoute",
       date: "2025",
       description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data.",
@@ -72,7 +82,7 @@ function Project() {
       description: "MediConnect is a healthcare app that streamlines patient–doctor interaction with easy appointments, medication tracking, and health record management. Doctors manage schedules, patient details, and weekly consultations effectively. Its clean interface ensures quick, organized medical access.",
       image:MediConnect,
       tech: ['Tailwind CSS', 'MERN Stack'],
-      demo: "https://github.com/Avins-VR/Medi-Connect",
+      demo: "https://mediconnect-platform.netlify.app/",
       github: "https://github.com/Avins-VR/Medi-Connect"
     },
     {
