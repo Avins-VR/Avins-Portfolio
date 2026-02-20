@@ -6,51 +6,49 @@ import JS from "./assets/JS.png";
 import HTML from "./assets/HTML.png";
 import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
-import ReactLogo from "./assets/React.png";
-import nodejs from "./assets/Nodejs.png";
-import fastapi from "./assets/fast api.png";
-import Express from "./assets/express-js.png";
+import Mern from "./assets/Mern.png";
+import Nlp from "./assets/nlp.png";
+import cnn from "./assets/cnn.png";
+import ann from "./assets/Ann.png";
 import sql from "./assets/sql.png";
-import mongodb from "./assets/Mongodb.png";
 import ml from "./assets/ml.jpeg";
 import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
 import GitHub from "./assets/github.png";
-import Figma from "./assets/Figma.png";
+import tenseorflow from "./assets/tenseorflow.png";
 import Numpy from "./assets/numpy.png";
 import Pandas from "./assets/pandas.png";
-import ThunderClient from "./assets/thunder client.png";
+import scikitlearn from "./assets/scikit-learn.png";
 function Techstack() {
   const [frontend] = useState([
     { name: "HTML", image: HTML, alt: "HTML" },
     { name: "CSS", image: CSS, alt: "CSS" },
     { name: "JavaScript", image: JS, alt: "JavaScript" },
     { name: "Tailwind CSS", image: tailwind, alt: "Tailwind CSS" },
-    { name: "React", image: ReactLogo, alt: "React" },
+    { name: "MERN Stack", image: Mern, alt: "MERN Stack" },
   ]);
   const [backend] = useState([
-    { name: "Python", image: Python, alt: "Python" },
-    { name: "Node.js", image: nodejs, alt: "Node.js" },
-    { name: "Express", image: Express, alt: "Express" },
-    { name: "Fast API", image: fastapi, alt: "FastAPI" },
+    { name: "ANN", image: ann, alt: "Artificial Neural Network" },
+    { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
+    { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
+    { name: "Computer Vision", image: cv, alt: "Computer Vision" },
   ]);
   const [database] = useState([
-    { name: "MongoDB", image: mongodb, alt: "MongoDB" },
+    { name: "Python", image: Python, alt: "Python" },
     { name: "SQL", image: sql, alt: "SQL" },
   ]);
   const [ai] = useState([
     { name: "Machine Learning", image: ml, alt: "Machine Learning" },
     { name: "Deep Learning", image: dl, alt: "Deep Learning" },
-    { name: "Computer Vision", image: cv, alt: "Computer Vision" },
   ]);
   const [tools] = useState([
     { name: "Git", image: Git, alt: "Git" },
     { name: "GitHub", image: GitHub, alt: "GitHub" },
-    { name: "Figma", image: Figma, alt: "Figma" },
+    { name: "TensorFlow", image: tenseorflow, alt: "TensorFlow" },
     { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Pandas", image:Pandas, alt:"Pandas" },
-    {name:"Thunder Client", image:ThunderClient, alt:"Thunder Client" }
+    {name:"Scikit-Learn", image:scikitlearn, alt:"Scikit-Learn" }
   ]);
 
   // Animation Variants
@@ -109,7 +107,7 @@ function Techstack() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <h2>Frontend Development</h2>
+            <h2>Full-Stack Development</h2>
             <div className="tech-grid">
               {frontend.map((tech, index) => (
                 <motion.div
@@ -134,7 +132,7 @@ function Techstack() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <h2>Database</h2>
+            <h2>Programming Languages</h2>
             <div className="tech-grid">
               {database.map((tech, index) => (
                 <motion.div
@@ -168,7 +166,7 @@ function Techstack() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <h2>Backend Development</h2>
+            <h2>Technologies</h2>
             <div className="tech-grid">
               {backend.map((tech, index) => (
                 <motion.div

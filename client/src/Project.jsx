@@ -8,13 +8,10 @@ import BlackjackGame from './assets/BlackjackGame.jpg';
 import MiniMart from './assets/MiniMart.jpg';
 import InstagramClone from './assets/InstagramClone.jpg';
 import SafeRoute from './assets/SafeRoute.png';
-import SJIT from './assets/SJIT.jpg';
 import AmbulancePredictor from './assets/Ambulance demend.jpeg';
 import MediConnect from './assets/Medi Connect.png';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
-import StitchPro from './assets/StitchPro.jpg';
-import Restaurant from './assets/Restaurant.jpg';
 import SpamShield from './assets/spam.jpg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
 import Smart_Agri_AI from './assets/Smart Agri AI.png';
@@ -156,34 +153,7 @@ function Project() {
       tech: ['HTML', 'CSS', 'JavaScript'],
       demo: "https://avins-vr.github.io/Mini-Mart/Mini%20Mart/Minimart.html",
       github: "https://github.com/Avins-VR/Mini-Mart/tree/main/Mini%20Mart"
-    },
-    {
-      title: "SJIT Portal Clone Design",
-      date:"2024",
-      description: "SJIT Portal Clone Design is a modern UI/UX project reimagining the student and faculty portal, featuring clean navigation, intuitive layout, and enhanced user flow for simplified access to academic records and campus services.",
-      image: SJIT,
-      tech: ['Figma', 'Prototyping'],
-      demo: "https://www.figma.com/proto/eP6uqzzGI0IrLP1vviV5l6/SJIT-Web-Cloning?node-id=14-3&starting-point-node-id=14%3A3&scaling=scale-down-width&content-scaling=fixed",
-      github: "https://github.com/Avins-VR/CLONE_SJIT_WEBSITE?tab=readme-ov-file"
-    },
-    {
-      title: "StitchPro Login Page",
-      date:"2025",
-      description: "StitchPro  Login Page is a modern UI/UX design for a fashion management system, focusing on clarity, responsiveness, and intuitive navigation to provide a seamless and welcoming user experience.",
-      image: StitchPro,
-      tech: ['Figma', 'Prototyping'],
-      demo: "https://www.figma.com/proto/4VQ1Ht9OhQS836LOofKT5C/StritchPro-Login-Page?node-id=16-35&scaling=scale-down-width&content-scaling=fixed",
-      github: "https://github.com/Avins-VR/StitchPro-Login-page"
-    },
-    {
-      title: "Tasty Haven Restaurant",
-      date:"2024",
-      description: "Tasty Haven Restaurant is a UI/UX design project enhancing the digital dining experience with smooth navigation, responsive layout, and an inviting interface for menu exploration and table booking",
-      image: Restaurant,
-      tech: ['Figma', 'Prototyping'],
-      demo: "https://www.figma.com/proto/b1MNJlzZVFsdarbiJCX6IV/TastyHaven-Restaurent?node-id=3-2&starting-point-node-id=3%3A2&scaling=scale-down-width&content-scaling=fixed",
-      github: "https://github.com/Avins-VR/TASTY_HEAVAN?tab=readme-ov-file"
-    },
+    }
   ]);
    const containerVariants = {
     hidden: { opacity: 0 },
