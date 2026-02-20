@@ -7,7 +7,7 @@ import Project from "./Project.jsx";
 import Experience from "./Experience.jsx";
 import Certificate from "./Certificate.jsx";
 import Contact from "./Contact.jsx";
-import ProfileImage from "./assets/Avins.jpg";
+import ProfileImage from "./assets/Avins image.png";
 import Footer from "./Footer.jsx";
 import Loading from "./Loading.jsx"; // ✅ Import the Loading component
 
