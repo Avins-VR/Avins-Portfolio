@@ -7,7 +7,7 @@ import HTML from "./assets/HTML.png";
 import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
 import Mern from "./assets/Mern.png";
-import Nlp from "./assets/nlp.png";
+import Nlp from "./assets/Nlp.png";
 import cnn from "./assets/cnn.png";
 import ann from "./assets/Ann.png";
 import sql from "./assets/sql.png";
