@@ -79,15 +79,14 @@ function Techstack() {
       </motion.h1>
 
       <motion.p
-        className="description"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        viewport={{ once: true }}
-      >
-        Proficient in full-stack development and AI, with hands-on experience in
-        modern technologies and advanced tools.
-      </motion.p>
+  className="description"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.3 }}
+  viewport={{ once: true }}
+>
+  Skilled in Machine Learning, Deep Learning, and Computer Vision, building intelligent AI-driven solutions.
+</motion.p>
 
       {/* Tech Sections */}
       <div className="tech-sections">

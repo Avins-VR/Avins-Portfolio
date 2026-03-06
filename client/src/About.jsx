@@ -64,17 +64,21 @@ function About() {
           >
             <h2>MY STORY</h2>
             <p>
-              Passionate AI & Data Science student with expertise in Machine Learning, Deep Learning, Computer Vision,
-              Full Stack Development, and user-centered UI/UX design. I build intelligent and scalable 
-              applications that solve real-world problems and enhance digital experiences.
-            </p>
-            <p>
-              With a strong foundation in Python, SQL, and modern development frameworks, I specialize in 
-              combining AI integration with full-stack solutions to create impactful, innovative, and user-focused applications.
-              I am continuously exploring emerging technologies to stay ahead in the fast-evolving tech landscape, strengthening 
-              my ability to deliver future-ready solutions. My goal is to leverage AI and development expertise to drive innovation,
-              solve meaningful challenges, and make technology more accessible.
-            </p>
+  Passionate AI & Data Science student aspiring to become a Machine Learning Engineer, 
+  with strong expertise in Machine Learning, Deep Learning, and Computer Vision. 
+  I focus on developing intelligent systems and AI-driven solutions that solve 
+  real-world problems using data-driven approaches and advanced models.
+</p>
+
+<p>
+  With a solid foundation in Python, SQL, and modern AI frameworks, I specialize in 
+  building and training machine learning and deep learning models for applications 
+  such as prediction systems, computer vision solutions, and intelligent automation. 
+  I also have working knowledge of full-stack development, which helps me integrate 
+  AI models into scalable applications and deploy practical real-world solutions. 
+  I continuously explore emerging technologies in AI to strengthen my expertise and 
+  build innovative, impactful systems that address meaningful challenges.
+</p>
           </motion.div>
         </motion.div>
 
@@ -103,29 +107,29 @@ function About() {
           >
             {[
               {
-                icon: "bi bi-cpu",
-                title: "ARTIFICIAL INTELLIGENCE",
-                desc: "Developing AI solutions using ML, Deep Learning, and Computer Vision",
-                tech: ["Scikit-learn", "TensorFlow", "CNN"],
-              },
-              {
-                icon: "bi bi-code-square",
-                title: "FRONTEND DEVELOPMENT",
-                desc: "Building responsive and interactive user interfaces",
-                tech: ["React", "JavaScript", "Tailwind CSS"],
-              },
-              {
-                icon: "bi bi-hdd-rack",
-                title: "BACKEND DEVELOPMENT",
-                desc: "Designing scalable and efficient server-side applications",
-                tech: ["Node.js", "Express.js", "FastAPI", "MongoDB"],
-              },
-              {
-                icon: "bi bi-palette",
-                title: "UI/UX DESIGN",
-                desc: "Designing intuitive and beautiful user experiences",
-                tech: ["Figma", "Prototyping"],
-              },
+  icon: "bi bi-cpu",
+  title: "MACHINE LEARNING & AI",
+  desc: "Developing intelligent systems using Machine Learning and data-driven models to solve real-world problems",
+  tech: ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"],
+},
+{
+  icon: "bi bi-activity",
+  title: "DEEP LEARNING",
+  desc: "Designing and training deep neural networks for advanced AI applications",
+  tech: ["TensorFlow", "Keras", "CNN", "Neural Networks"],
+},
+{
+  icon: "bi bi-eye",
+  title: "COMPUTER VISION",
+  desc: "Building vision-based AI models for image analysis, object detection, and pattern recognition",
+  tech: ["OpenCV", "CNN", "YOLO", "Image Processing"],
+},
+{
+  icon: "bi bi-code-slash",
+  title: "FULL-STACK DEVELOPMENT",
+  desc: "Developing scalable web applications and integrating AI models into real-world systems",
+  tech: ["React", "Node.js", "Express.js", "MongoDB"],
+},
               
             ].map((skill, i) => (
               <motion.div

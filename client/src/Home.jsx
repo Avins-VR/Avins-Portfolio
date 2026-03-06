@@ -55,16 +55,18 @@ function App() {
                   Software Engineer
                 </motion.h3>
                 <motion.p
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, delay: 0.5 }}
-                >
-                  Passionate Artificial Intelligence & Data Science student with
-                  expertise in Machine Learning, Deep Learning, Computer
-                  Vision, Full Stack Development and UI/UX design. I create intelligent, scalable
-                  applications that solve real-world problems, drive innovation,
-                  and deliver exceptional user experiences.
-                </motion.p>
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.5 }}
+>
+  Passionate Artificial Intelligence & Data Science student aspiring to become a
+  Machine Learning Engineer, with strong expertise in Machine Learning, Deep
+  Learning, and Computer Vision. I focus on developing intelligent,
+  data-driven systems that solve real-world problems and drive innovation.
+  With working knowledge of Full-Stack Development, I can integrate AI models
+  into scalable applications and build practical solutions that deliver real
+  impact.
+</motion.p>
               </motion.div>
 
               <motion.div

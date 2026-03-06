@@ -131,7 +131,7 @@ body {
 
 .text-section {
   flex: 1;
-  max-width: 600px;
+  max-width: 700px;
   z-index: 1;
 }
 
@@ -151,7 +151,7 @@ body {
 .text-section h3 {
   font-size: 33px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-left: 30px;
   background: linear-gradient(90deg, #b3d5df, #a2d2be, #dba9e8);
   -webkit-background-clip: text;
