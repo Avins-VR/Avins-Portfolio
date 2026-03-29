@@ -108,7 +108,7 @@ function About() {
             {[
               {
   icon: "bi bi-cpu",
-  title: "MACHINE LEARNING & AI",
+  title: "AI & MACHINE LEARNING",
   desc: "Developing intelligent systems using Machine Learning and data-driven models to solve real-world problems",
   tech: ["Scikit-learn", "TensorFlow", "Pandas", "NumPy"],
 },
@@ -119,10 +119,10 @@ function About() {
   tech: ["TensorFlow", "Keras", "CNN", "Neural Networks"],
 },
 {
-  icon: "bi bi-eye",
-  title: "COMPUTER VISION",
-  desc: "Building vision-based AI models for image analysis, object detection, and pattern recognition",
-  tech: ["OpenCV", "CNN", "YOLO", "Image Processing"],
+  icon: "bi bi-diagram-3",
+  title: "MULTIMODAL AI",
+  desc: "Developing multimodal AI systems by fusing visual and structured data to deliver accurate predictions and intelligent decision-making",
+  tech: ["CNN", "Multimodal Fusion", "Data Fusion", "NLP"]
 },
 {
   icon: "bi bi-code-slash",
