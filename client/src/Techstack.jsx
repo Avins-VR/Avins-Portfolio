@@ -8,10 +8,13 @@ import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
 import Mern from "./assets/Mern.png";
 import Nlp from "./assets/Nlp.png";
+import MistralAPI from "./assets/Mistral API.png";
 import cnn from "./assets/cnn.png";
 import ann from "./assets/Ann.png";
 import sql from "./assets/sql.png";
 import ml from "./assets/ml.jpeg";
+import multimodal from "./assets/multimodal.png";
+import datascience from "./assets/data science.jpg";
 import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
@@ -20,6 +23,7 @@ import tenseorflow from "./assets/tenseorflow.png";
 import Numpy from "./assets/numpy.png";
 import Pandas from "./assets/pandas.png";
 import scikitlearn from "./assets/scikit-learn.png";
+import ststreamlit from "./assets/streamlitlogo.png";
 function Techstack() {
   const [frontend] = useState([
     { name: "HTML", image: HTML, alt: "HTML" },
@@ -33,6 +37,7 @@ function Techstack() {
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
     { name: "Computer Vision", image: cv, alt: "Computer Vision" },
+    { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
   ]);
   const [database] = useState([
     { name: "Python", image: Python, alt: "Python" },
@@ -41,6 +46,8 @@ function Techstack() {
   const [ai] = useState([
     { name: "Machine Learning", image: ml, alt: "Machine Learning" },
     { name: "Deep Learning", image: dl, alt: "Deep Learning" },
+    { name: "Multimodal AI", image: multimodal, alt: "Multimodal AI" },
+    { name: "Data Science", image: datascience, alt: "Data Science" },
   ]);
   const [tools] = useState([
     { name: "Git", image: Git, alt: "Git" },
@@ -48,7 +55,8 @@ function Techstack() {
     { name: "TensorFlow", image: tenseorflow, alt: "TensorFlow" },
     { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Pandas", image:Pandas, alt:"Pandas" },
-    {name:"Scikit-Learn", image:scikitlearn, alt:"Scikit-Learn" }
+    {name:"Scikit-Learn", image:scikitlearn, alt:"Scikit-Learn" },
+    {name:"Streamlit", image:ststreamlit, alt:"Streamlit" }
   ]);
 
   // Animation Variants
