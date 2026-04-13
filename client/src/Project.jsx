@@ -21,44 +21,44 @@ function Project() {
   const [projects] = useState([
      {
       title: "Smart Agri AI",
-      date: "2026",
-      description: "Developed Smart Agri AI, an AI-powered agriculture system for remote farm monitoring using drone imagery and virtual sensor data. Built multimodal deep learning models to analyze crop health, detect nutrient deficiencies, identify growth stages, and predict irrigation and weather impact, delivering intelligent advisory and crop health insights for data-driven precision farming.",
+      date: "2026 - (Ongoing)",
+      description: "Engineered an AI-driven smart agriculture system for remote farm monitoring using drone-based multispectral imagery and virtual sensor data. Implemented multimodal deep learning models to detect nutrient deficiencies, crop stress, growth stages, and predict irrigation needs. Designed an intelligent advisory system with crop health scoring and real-time insights to optimize water and fertilizer usage, improve yield, and deliver actionable dashboard-based recommendations with weather-driven decision support.",
       image: Smart_Agri_AI,
-      tech: ['Multimodal AI','Python'],
+      tech: ['Multimodal AI','API','Random Forest'],
       demo: "https://github.com/Avins-VR/Smart-Agri-AI",
       github: "https://github.com/Avins-VR/Smart-Agri-AI"
     },
     {
-      title: "Multimodal Crop Diagnosis with NLP Chatbot ",
+      title: "Multimodal NutriAI",
       date: "2026",
-      description: "Built a multimodal AI system for crop nutrient diagnosis using leaf imagery, soil (pH, moisture, NPK), and weather data. Detects deficiency stages, provides recommendations with confidence, and integrates an NLP chatbot with self-learning feedback to improve accuracy and support precision agriculture for optimized fertilizer use and improved crop productivity.",
+      description: "Formulated a multimodal AI system combining CNN-based leaf analysis with soil (pH, moisture, NPK) and weather data to detect nutrient deficiencies and severity. Introduced DSEE to capture spatial progression patterns, enhancing feature representation. Built a hybrid data-fusion model delivering high-confidence predictions with fertilizer recommendations, and integrated an LLM-based chatbot to enhance user interaction and decision support, improving usability and practical adoption in real-world farming scenarios.",
       image: Nutrient_Deficiency,
-      tech: ['Multimodal AI', 'NLP'],
+      tech: ['Multimodal AI', 'API Integration','DSEE'],
       demo: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot",
       github: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot"
-    },
-        {
-      title:"AI-powered ambulance demand prediction",
-      date:"2025",
-      description: "AI-powered ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
-      image: AmbulancePredictor,
-      tech: ['Python', 'numpy','pandas'],
-      demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
-      github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
     },
     {
       title:"AI-powered Car Parking Spot Dedection ",
       date:"2025",
-      description: "AI-powered Car Parking Spot Dedection  is a Computer Vision project using OpenCV to monitor parking spaces in real time, marking occupied and available spots to optimize parking efficiency, reduce traffic congestion, and improve urban mobility.",
+      description: "Developed a real-time smart parking system using Computer Vision to detect and monitor parking space occupancy from images and video streams. Applied mask-based training to accurately classify parking slots as occupied or vacant. Designed a visual detection interface highlighting occupied and available spots, enabling faster parking decisions, reducing search time, and improving urban traffic flow, minimizing congestion and enhancing overall parking efficiency.",
       image:parking,
       tech: ['Python', 'OpenCV','NumPy'],
       demo: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-",
       github: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-"
     } ,
     {
+      title:"AI-powered ambulance demand prediction",
+      date:"2025",
+      description: "AI-powered ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
+      image: AmbulancePredictor,
+      tech: ['Random Forest', 'numpy','pandas'],
+      demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
+      github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
+    },
+    {
       title: "AI-Based Potato Leaf Disease Classification",
       date: "2026",
-      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using a CNN-based deep learning model for early and accurate disease detection.",
+      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using CNN-based deep learning model for early and accurate detection ,enabling timely intervention and improved crop management decisions.",
       image: AI_Potato,
       tech: ['TensorFlow', 'Matplotlib','CNN'],
       demo: "https://github.com/Avins-VR/Potato-Disease-Classification/blob/main/Potato%20Disease%20Classification.ipynb",
@@ -67,7 +67,7 @@ function Project() {
     {
       title: "SafeRoute",
       date: "2025",
-      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data.",
+      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data, providing safer route suggestions and real-time decision-making.",
       image: SafeRoute,
       tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
       demo: "https://saferoute-blze.onrender.com/",
@@ -85,7 +85,7 @@ function Project() {
     {
       title:"Emotion Detector",
       date:"2025",
-      description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience.",
+      description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience, supporting real-time feedback and improved human–computer interaction.",
       image:Emotion,
       tech: ['Python', 'OpenCV','TensorFlow','FER'],
       demo: "https://github.com/Avins-VR/Emotion-Predection-Open-CV/blob/main/Emotion%20predection/emotion-detection%20.ipynb",
@@ -94,7 +94,7 @@ function Project() {
     {
       title:"SpamShield",
       date:"2025",
-      description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience.",
+      description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience, reducing spam exposure and improving email management efficiency for users overall.",
       image:SpamShield,
       tech: ['Python', 'numpy','pandas'],
       demo: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-/blob/main/Naive%20bayes%20Email%20spam/Email%20Spam.ipynb",
@@ -121,7 +121,7 @@ function Project() {
     {
       title: "Simple Calculator",
       date: "2024",
-      description: "Simple Calculator is a clean project for basic arithmetic operations, featuring a minimal design and intuitive interface for quick, user-friendly calculations.",
+      description: "Simple Calculator is a clean project for basic arithmetic operations, featuring a minimal design and intuitive interface for quick, user-friendly calculations for everyday use with seamless experience.",
       image: SimpleCalculator,
       tech: ['HTML', 'CSS', 'JavaScript'],
       demo: "https://avins-vr.github.io/Simple-Calculator/Calculator/calculator.html",
@@ -130,7 +130,7 @@ function Project() {
     {
       title: "Booksky",
       date: "2024",
-      description: "Booksky is a modern digital platform to explore and organize books across genres, featuring a clean interface, seamless navigation, and an engaging reading experience.",
+      description: "Booksky is the  modern digital platform to explore and organize books across genres, featuring a clean interface, seamless navigation, and an engaging reading experience for diverse users.",
       image: Booksky,
       tech: ['HTML', 'CSS', 'JavaScript'],
       demo: "https://avins-vr.github.io/Booksky/Booksky/book.html",
