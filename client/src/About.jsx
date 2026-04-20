@@ -65,14 +65,14 @@ function About() {
             <h2>MY STORY</h2>
             <p>
   Passionate AI & Data Science student aspiring to become a Machine Learning Engineer, 
-  with strong expertise in Machine Learning, Deep Learning, and Computer Vision. 
+  with strong expertise in Machine Learning, Deep Learning, Multimodal AI and Computer Vision. 
   I focus on developing intelligent systems and AI-driven solutions that solve 
   real-world problems using data-driven approaches and advanced models.
 </p>
 
 <p>
   With a solid foundation in Python, SQL, and modern AI frameworks, I specialize in 
-  building and training machine learning and deep learning models for applications 
+  building and training machine learning, deep learning and Multimodal AI models for applications 
   such as prediction systems, computer vision solutions, and intelligent automation. 
   I also have working knowledge of full-stack development, which helps me integrate 
   AI models into scalable applications and deploy practical real-world solutions. 

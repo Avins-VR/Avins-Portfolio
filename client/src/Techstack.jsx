@@ -11,6 +11,8 @@ import Nlp from "./assets/Nlp.png";
 import MistralAPI from "./assets/Mistral API.png";
 import cnn from "./assets/cnn.png";
 import ann from "./assets/Ann.png";
+import rag from "./assets/rag-icon.png";
+import llm from "./assets/LLM.png";
 import sql from "./assets/sql.png";
 import ml from "./assets/ml.jpeg";
 import multimodal from "./assets/multimodal.png";
@@ -36,6 +38,8 @@ function Techstack() {
     { name: "ANN", image: ann, alt: "Artificial Neural Network" },
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
+    {name: "RAG", image: rag, alt: "Retrieval-Augmented Generation" },
+    {name: "LLM", image: llm, alt: "Large Language Models" },
     { name: "Computer Vision", image: cv, alt: "Computer Vision" },
     { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
   ]);

@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
-
 import Focusflowtask from './assets/Focusflowtask.png';
-import SimpleCalculator from './assets/SimpleCalculator.jpg';
-import Booksky from './assets/Booksky.jpg';
 import BlackjackGame from './assets/BlackjackGame.jpg';
-import MiniMart from './assets/MiniMart.jpg';
 import InstagramClone from './assets/InstagramClone.jpg';
 import SafeRoute from './assets/SafeRoute.png';
 import AmbulancePredictor from './assets/Ambulance demend.jpeg';
-import MediConnect from './assets/Medi Connect.png';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
 import SpamShield from './assets/spam.jpg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
 import Smart_Agri_AI from './assets/Smart Agri AI.png';
+import RAG from './assets/RAG.jpg';
 import Nutrient_Deficiency from './assets/Nutrient Deficiency.avif';
 
 function Project() {
@@ -22,27 +18,36 @@ function Project() {
      {
       title: "Smart Agri AI",
       date: "2026 - (Ongoing)",
-      description: "Engineered an AI-driven smart agriculture system for remote farm monitoring using drone-based multispectral imagery and virtual sensor data. Implemented multimodal deep learning models to detect nutrient deficiencies, crop stress, growth stages, and predict irrigation needs. Designed an intelligent advisory system with crop health scoring and real-time insights to optimize water and fertilizer usage, improve yield, and deliver actionable dashboard-based recommendations with weather-driven decision support.",
+      description: "Engineered an AI-driven smart agriculture system using multispectral imagery and real-time weather data (Open-Meteo API). Implemented multimodal deep learning models for crop stress, nutrient detection, growth stages, irrigation prediction, and an ML-based soil moisture model using weather and crop data. Developed a data-driven advisory system with dashboard-based recommendations and separate LLM chatbot for agriculture queries. Designed interactive dashboard with real-time and historical insights for data-driven decisions.",
       image: Smart_Agri_AI,
       tech: ['Multimodal AI','API','Random Forest'],
       demo: "https://github.com/Avins-VR/Smart-Agri-AI",
       github: "https://github.com/Avins-VR/Smart-Agri-AI"
     },
     {
-      title: "Multimodal NutriAI",
+      title: "Multimodal Nutri AI",
       date: "2026",
       description: "Formulated a multimodal AI system combining CNN-based leaf analysis with soil (pH, moisture, NPK) and weather data to detect nutrient deficiencies and severity. Introduced DSEE to capture spatial progression patterns, enhancing feature representation. Built a hybrid data-fusion model delivering high-confidence predictions with fertilizer recommendations, and integrated an LLM-based chatbot to enhance user interaction and decision support, improving usability and practical adoption in real-world farming scenarios.",
       image: Nutrient_Deficiency,
       tech: ['Multimodal AI', 'API Integration','DSEE'],
-      demo: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot",
-      github: "https://github.com/Avins-VR/Multimodal-Crop-Diagnosis-with-NLP-Chatbot"
+      demo: "https://github.com/Avins-VR/Multimodal-NutriAI",
+      github: "https://github.com/Avins-VR/Multimodal-NutriAI"
+    },
+    {
+      title: "RAG Learn AI",
+      date: "2026",
+      description: "Developed an RAG-based Intelligent PDF Learning Assistant enabling students to upload PDFs and receive structured explanations (What, Why, How, simplified terms, diagram flow) grounded document content. Implemented RAG pipeline with text extraction, chunking, embedding generation, and FAISS-based semantic retrieval for accurate context matching. Integrated LLM (Groq–LLaMA 3) to generate context-aware responses high relevance and reduced hallucination. Built for real-time queries and fast document retrieval.",
+      image: RAG,
+      tech: ['Groq LLaMA 3', 'FAISS)'],
+      demo: "https://github.com/Avins-VR/RAG-Learn-AI",
+      github: "https://github.com/Avins-VR/RAG-Learn-AI"
     },
     {
       title:"AI-powered Car Parking Spot Dedection ",
       date:"2025",
-      description: "Developed a real-time smart parking system using Computer Vision to detect and monitor parking space occupancy from images and video streams. Applied mask-based training to accurately classify parking slots as occupied or vacant. Designed a visual detection interface highlighting occupied and available spots, enabling faster parking decisions, reducing search time, and improving urban traffic flow, minimizing congestion and enhancing overall parking efficiency.",
+      description: "Smart Parking System is a computer vision-based solution that detects parking occupancy from images and video using mask-based classification, enabling real-time space identification, reducing search time, and minimizing congestion.",
       image:parking,
-      tech: ['Python', 'OpenCV','NumPy'],
+      tech: ['OpenCV','SVM','YOLO'],
       demo: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-",
       github: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-"
     } ,
@@ -74,15 +79,6 @@ function Project() {
       github: "https://github.com/Avins-VR/SafeRoute"
     },
     {
-      title:"Medi Connect",
-      date:"2025",
-      description: "MediConnect is a healthcare app that streamlines patient–doctor interaction with easy appointments, medication tracking, and health record management. Doctors manage schedules, patient details, and weekly consultations effectively. Its clean interface ensures quick, organized medical access.",
-      image:MediConnect,
-      tech: ['Tailwind CSS', 'MERN Stack'],
-      demo: "https://mediconnect-platform.netlify.app/",
-      github: "https://github.com/Avins-VR/Medi-Connect"
-    },
-    {
       title:"Emotion Detector",
       date:"2025",
       description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience, supporting real-time feedback and improved human–computer interaction.",
@@ -96,7 +92,7 @@ function Project() {
       date:"2025",
       description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience, reducing spam exposure and improving email management efficiency for users overall.",
       image:SpamShield,
-      tech: ['Python', 'numpy','pandas'],
+      tech: ['Naive Bayes', 'numpy','pandas'],
       demo: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-/blob/main/Naive%20bayes%20Email%20spam/Email%20Spam.ipynb",
       github: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-"
     },
@@ -119,24 +115,6 @@ function Project() {
       github: "https://github.com/Avins-VR/Insta-Clone"
     },
     {
-      title: "Simple Calculator",
-      date: "2024",
-      description: "Simple Calculator is a clean project for basic arithmetic operations, featuring a minimal design and intuitive interface for quick, user-friendly calculations for everyday use with seamless experience.",
-      image: SimpleCalculator,
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      demo: "https://avins-vr.github.io/Simple-Calculator/Calculator/calculator.html",
-      github: "https://github.com/Avins-VR/Simple-Calculator/blob/main/Calculator/calculator.html"
-    },
-    {
-      title: "Booksky",
-      date: "2024",
-      description: "Booksky is the  modern digital platform to explore and organize books across genres, featuring a clean interface, seamless navigation, and an engaging reading experience for diverse users.",
-      image: Booksky,
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      demo: "https://avins-vr.github.io/Booksky/Booksky/book.html",
-      github: "https://github.com/Avins-VR/Booksky/tree/main/Booksky"
-    },
-    {
       title: "Blackjack Game",
       date: "2024",
       description: "Blackjack Game is an interactive project that recreates the classic casino card game with dynamic animations, real-time score tracking, and responsive gameplay for an engaging user experience.",
@@ -144,15 +122,6 @@ function Project() {
       tech: ['HTML', 'CSS', 'JavaScript'],
       demo: "https://avins-vr.github.io/Blackjack-game/Blackjack/Blackjack.html",
       github: "https://github.com/Avins-VR/Blackjack-game/tree/main/Blackjack"
-    },
-    {
-      title: "Mini Mart",
-      date: "2024",
-      description: "Mini Mart is a modern online storefront with interactive product displays, smooth navigation, and features like light/dark mode and product modals, delivering an immersive grocery shopping experience.",
-      image: MiniMart,
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      demo: "https://avins-vr.github.io/Mini-Mart/Mini%20Mart/Minimart.html",
-      github: "https://github.com/Avins-VR/Mini-Mart/tree/main/Mini%20Mart"
     }
   ]);
    const containerVariants = {

@@ -10,12 +10,13 @@ import sqlCert from "./assets/sql and rdbm.png";
 import MongodbCert from "./assets/Mongodb basic.png";
 import MachineLearningCert from "./assets/ML Certificate.png";
 import OCIAIFoundation from "./assets/OCI AI Foundation.png";
+import Datascience from "./assets/Datascience.png";
 
 function Certificate() {
   const [certificates] = useState([
     {
       title: "OCI AI Foundations",
-      issuer: "Oracle University",
+      issuer: "Oracle University ",
       image: OCIAIFoundation,
     },
     {
@@ -32,6 +33,11 @@ function Certificate() {
       title: "Linguaskill",
       issuer: "Cambridge University",
       image: LinguaskillCert,
+    },
+    {
+      title: "Data Science",
+      issuer: "IBM",
+      image: Datascience,
     },
     {
       title: "SQL and Relational Database",
