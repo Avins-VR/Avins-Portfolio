@@ -4,7 +4,7 @@ This is my **personal full stack portfolio website** built using modern frontend
 It showcases my skills, projects, and includes a **contact feature** that allows users to send messages directly to my email.
 
 🔗 **Live Website:**  
-👉 http://avins-portfolio.netlify.app/
+👉 https://avins.netlify.app/
 
 ---
 
