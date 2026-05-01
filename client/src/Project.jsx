@@ -21,7 +21,7 @@ function Project() {
       description: "Engineered an AI-driven smart agriculture system using multispectral imagery and real-time weather data (Open-Meteo API). Implemented multimodal deep learning models for crop stress, nutrient detection, growth stages, irrigation prediction, and an ML-based soil moisture model using weather and crop data. Developed a data-driven advisory system with dashboard-based recommendations and separate LLM chatbot for agriculture queries. Designed interactive dashboard with real-time and historical insights for data-driven decisions.",
       image: Smart_Agri_AI,
       tech: ['Multimodal AI','API','Random Forest'],
-      demo: "https://github.com/Avins-VR/Smart-Agri-AI",
+      demo: "https://smart-agri-ai-dashboard.streamlit.app/",
       github: "https://github.com/Avins-VR/Smart-Agri-AI"
     },
     {
@@ -30,7 +30,7 @@ function Project() {
       description: "Formulated a multimodal AI system combining CNN-based leaf analysis with soil (pH, moisture, NPK) and weather data to detect nutrient deficiencies and severity. Introduced DSEE to capture spatial progression patterns, enhancing feature representation. Built a hybrid data-fusion model delivering high-confidence predictions with fertilizer recommendations, and integrated an LLM-based chatbot to enhance user interaction and decision support, improving usability and practical adoption in real-world farming scenarios.",
       image: Nutrient_Deficiency,
       tech: ['Multimodal AI', 'API Integration','DSEE'],
-      demo: "https://github.com/Avins-VR/Multimodal-NutriAI",
+      demo: "https://multimodal-nutriai.streamlit.app/",
       github: "https://github.com/Avins-VR/Multimodal-NutriAI"
     },
     {
@@ -39,7 +39,7 @@ function Project() {
       description: "Developed an RAG-based Intelligent PDF Learning Assistant enabling students to upload PDFs and receive structured explanations (What, Why, How, simplified terms, diagram flow) grounded document content. Implemented RAG pipeline with text extraction, chunking, embedding generation, and FAISS-based semantic retrieval for accurate context matching. Integrated LLM (Groq–LLaMA 3) to generate context-aware responses high relevance and reduced hallucination. Built for real-time queries and fast document retrieval.",
       image: RAG,
       tech: ['Groq LLaMA 3', 'FAISS)'],
-      demo: "https://github.com/Avins-VR/RAG-Learn-AI",
+      demo: "https://rag-learn-ai.streamlit.app/",
       github: "https://github.com/Avins-VR/RAG-Learn-AI"
     },
     {
