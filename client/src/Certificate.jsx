@@ -6,6 +6,7 @@ import { CardContainer, CardBody, CardItem } from "./3D card.jsx";
 import PythonCert from "./assets/Datasciencenptl.jpg";
 import LinguaskillCert from "./assets/Linguaskill.jpg";
 import DBMS from "./assets/DBMS.png";
+import ML from "./assets/ML NPTEL.png";
 import sqlCert from "./assets/sql and rdbm.png";
 import MongodbCert from "./assets/Mongodb basic.png";
 import MachineLearningCert from "./assets/ML Certificate.png";
@@ -28,6 +29,11 @@ function Certificate() {
       title: "Data Base Management System",
       issuer: "NPTEL",
       image: DBMS,
+    },
+    {
+      title: "Machine Learning (ML)",
+      issuer: "NPTEL",
+      image: ML,
     },
     {
       title: "Linguaskill",
