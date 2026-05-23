@@ -17,10 +17,10 @@ function Project() {
   const [projects] = useState([
      {
       title: "Smart Agri AI",
-      date: "2026 - (Ongoing)",
-      description: "Engineered an AI-driven smart agriculture system using multispectral imagery and real-time weather data (Open-Meteo API). Implemented multimodal deep learning models for crop stress, nutrient detection, growth stages, irrigation prediction, and an ML-based soil moisture model using weather and crop data. Developed a data-driven advisory system with dashboard-based recommendations and separate LLM chatbot for agriculture queries. Designed interactive dashboard with real-time and historical insights for data-driven decisions.",
+      date: "2026",
+      description: "Engineered an AI-driven Smart Agriculture system using real-time weather data (Open-Meteo API), ML/DL models for pest detection, nutrient analysis, crop stage tracking, irrigation prediction, and soil moisture estimation using weather and crop data. Developed data-driven advisory system with AI recommendations and agriculture-focused LLM chatbot for farmer support. Designed interactive dashboard with real-time monitoring, historical analytics, crop health insights, and farm location tracking for smart decisions.",
       image: Smart_Agri_AI,
-      tech: ['Multimodal AI','API','Random Forest'],
+      tech: ['EfficientNet-B0','API','Random Forest'],
       demo: "https://smart-agri-ai-dashboard.streamlit.app/",
       github: "https://github.com/Avins-VR/Smart-Agri-AI"
     },
@@ -29,7 +29,7 @@ function Project() {
       date: "2026",
       description: "Formulated a multimodal AI system combining CNN-based leaf analysis with soil (pH, moisture, NPK) and weather data to detect nutrient deficiencies and severity. Introduced DSEE to capture spatial progression patterns, enhancing feature representation. Built a hybrid data-fusion model delivering high-confidence predictions with fertilizer recommendations, and integrated an LLM-based chatbot to enhance user interaction and decision support, improving usability and practical adoption in real-world farming scenarios.",
       image: Nutrient_Deficiency,
-      tech: ['Multimodal AI', 'API Integration','DSEE'],
+      tech: ['Multimodal AI', 'Mistral LLM','DSEE'],
       demo: "https://multimodal-nutriai.streamlit.app/",
       github: "https://github.com/Avins-VR/Multimodal-NutriAI"
     },
