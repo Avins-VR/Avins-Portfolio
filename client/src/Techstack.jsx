@@ -24,6 +24,7 @@ import GitHub from "./assets/github.png";
 import tenseorflow from "./assets/tenseorflow.png";
 import Numpy from "./assets/numpy.png";
 import Pandas from "./assets/pandas.png";
+import roboflow from "./assets/Roboflow.png";
 import scikitlearn from "./assets/scikit-learn.png";
 import ststreamlit from "./assets/streamlitlogo.png";
 function Techstack() {
@@ -60,7 +61,8 @@ function Techstack() {
     { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Pandas", image:Pandas, alt:"Pandas" },
     {name:"Scikit-Learn", image:scikitlearn, alt:"Scikit-Learn" },
-    {name:"Streamlit", image:ststreamlit, alt:"Streamlit" }
+    {name:"Streamlit", image:ststreamlit, alt:"Streamlit" },
+    {name:"Roboflow", image:roboflow, alt:"Roboflow" },
   ]);
 
   // Animation Variants
