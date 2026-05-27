@@ -7,7 +7,6 @@ import SafeRoute from './assets/SafeRoute.png';
 import AmbulancePredictor from './assets/Ambulance demend.jpeg';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
-import SpamShield from './assets/spam.jpg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
 import Smart_Agri_AI from './assets/Smart Agri AI.png';
 import RAG from './assets/RAG.jpg';
@@ -52,13 +51,22 @@ function Project() {
       github: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-"
     } ,
     {
-      title:"AI-powered ambulance demand prediction",
+      title: "SafeRoute",
+      date: "2025",
+      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data, providing safer route suggestions and real-time decision-making.",
+      image: SafeRoute,
+      tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
+      demo: "https://saferoute-blze.onrender.com/",
+      github: "https://github.com/Avins-VR/SafeRoute"
+    },
+    {
+      title:"EmotiSense",
       date:"2025",
-      description: "AI-powered ambulance demand prediction is a Machine Learning project that forecasts ambulance demand using real-time data, enabling smarter resource allocation, faster emergency response, and improved public safety.",
-      image: AmbulancePredictor,
-      tech: ['Random Forest', 'numpy','pandas'],
-      demo: "https://github.com/Avins-VR/Ambulance-Demand-Predection/blob/main/Ambulance_demand/Ambulance%20Demand%20Predection.ipynb",
-      github: "https://github.com/Avins-VR/Ambulance-Demand-Predection"
+      description: "EmotiSense - AI Emotion Intelligence is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience, supporting real-time feedback and improved human–computer interaction.",
+      image:Emotion,
+      tech: ['Python', 'OpenCV','TensorFlow','FER'],
+      demo: "https://ai-emotisense.streamlit.app/",
+      github: "https://github.com/Avins-VR/EmotiSense"
     },
     {
       title: "AI-Based Potato Leaf Disease Classification",
@@ -70,36 +78,9 @@ function Project() {
       github: "https://github.com/Avins-VR/Potato-Disease-Classification"
     },
     {
-      title: "SafeRoute",
-      date: "2025",
-      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data, providing safer route suggestions and real-time decision-making.",
-      image: SafeRoute,
-      tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
-      demo: "https://saferoute-blze.onrender.com/",
-      github: "https://github.com/Avins-VR/SafeRoute"
-    },
-    {
-      title:"Emotion Detector",
-      date:"2025",
-      description: "Emotion Detector is a Computer Vision and Machine Learning project that recognizes human emotions in real time using facial expression analysis, enabling applications in mental health, HCI, and customer experience, supporting real-time feedback and improved human–computer interaction.",
-      image:Emotion,
-      tech: ['Python', 'OpenCV','TensorFlow','FER'],
-      demo: "https://github.com/Avins-VR/Emotion-Predection-Open-CV/blob/main/Emotion%20predection/emotion-detection%20.ipynb",
-      github: "https://github.com/Avins-VR/Emotion-Predection-Open-CV"
-    },
-    {
-      title:"SpamShield",
-      date:"2025",
-      description: "SpamShield is a Machine Learning based email classification system that filters unwanted messages by analyzing keywords and context, ensuring a safer, smarter, and cleaner inbox experience, reducing spam exposure and improving email management efficiency for users overall.",
-      image:SpamShield,
-      tech: ['Naive Bayes', 'numpy','pandas'],
-      demo: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-/blob/main/Naive%20bayes%20Email%20spam/Email%20Spam.ipynb",
-      github: "https://github.com/Avins-VR/SpamShield-Spam-Email-Dedection-"
-    },
-    {
       title: "Focusflow Tasks",
       date: "2025",
-      description: "Focusflow Tasks is a premium task manager that efficiently tracks daily progress, effortlessly organizes tasks by difficulty and category, and helps users stay focused with important due dates and priorities.",
+      description: "Focusflow Tasks is a premium task manager that tracks daily progress, organizes tasks by difficulty and category, and helps users stay focused with due dates and priorities. It improves productivity through a clean user experience and seamless task management workflow.",
       image: Focusflowtask,
       tech: ['HTML', 'CSS','JS','React'],
       demo: "https://todo-list-udtd.vercel.app/",
@@ -108,7 +89,7 @@ function Project() {
     {
       title: "Instagram Clone",
       date: "2025",
-      description: "Instagram Clone is an interactive project replicating key features and aesthetics of Instagram, with a clean UI, responsive layouts, and smooth user interactions for a social media-like experience.",
+      description: "Instagram Clone is an interactive frontend social media project that replicates the core features and experience of Instagram with a modern desktop-focused interface. It includes stories, explore, reels, messages, notifications, and dynamic post layouts with smooth user interactions.",
       image: InstagramClone,
       tech: ['HTML', 'CSS', 'JavaScript', 'React'],
       demo: "https://insta-clone-three-cyan.vercel.app/",

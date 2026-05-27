@@ -558,8 +558,8 @@ button a:hover {
 .tech-sections {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
-  max-width: 1300px;
+  gap: 60px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -576,14 +576,19 @@ button a:hover {
 }
 
 .tech-category h2 {
-    font-size:28px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    text-align: center;
-    color: rgb(216, 215, 215);
-}
+    letter-spacing: 1px;
 
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    color: #f1f1f1;
+
+    position: relative;
+}
 .tech-grid {
     display: flex;
     flex-wrap: wrap;

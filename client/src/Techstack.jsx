@@ -17,6 +17,7 @@ import sql from "./assets/sql.png";
 import ml from "./assets/ml.jpeg";
 import multimodal from "./assets/multimodal.png";
 import datascience from "./assets/data science.jpg";
+import prompt from "./assets/prompt.png";
 import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
@@ -53,6 +54,7 @@ function Techstack() {
     { name: "Deep Learning", image: dl, alt: "Deep Learning" },
     { name: "Multimodal AI", image: multimodal, alt: "Multimodal AI" },
     { name: "Data Science", image: datascience, alt: "Data Science" },
+    { name: "Prompt Engineering", image: prompt, alt: "Prompt Engineering" },
   ]);
   const [tools] = useState([
     { name: "Git", image: Git, alt: "Git" },
@@ -112,90 +114,6 @@ function Techstack() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          {/* Frontend */}
-          <motion.div
-            className="tech-category"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            <h2>Full-Stack Development</h2>
-            <div className="tech-grid">
-              {frontend.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  className="tech-card"
-                  variants={cardVariants}
-                  transition={{ duration: 0.8 }}
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <img src={tech.image} alt={tech.alt} />
-                  <p>{tech.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Database */}
-          <motion.div
-            className="tech-category"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            <h2>Programming Languages</h2>
-            <div className="tech-grid">
-              {database.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  className="tech-card"
-                  variants={cardVariants}
-                  transition={{ duration: 0.8 }}
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <img src={tech.image} alt={tech.alt} />
-                  <p>{tech.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </motion.div>
-
-        {/* Right */}
-        <motion.div
-          className="tech-group-right"
-          initial={{ opacity: 0, x: 80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          {/* Backend */}
-          <motion.div
-            className="tech-category"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            <h2>Technologies</h2>
-            <div className="tech-grid">
-              {backend.map((tech, index) => (
-                <motion.div
-                  key={index}
-                  className="tech-card"
-                  variants={cardVariants}
-                  transition={{ duration: 0.8 }}
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <img src={tech.image} alt={tech.alt} />
-                  <p>{tech.name}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
           {/* AI */}
           <motion.div
             className="tech-category"
@@ -220,33 +138,119 @@ function Techstack() {
               ))}
             </div>
           </motion.div>
+          {/* Programming Languages */}
+          <motion.div
+            className="tech-category"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <h2>Programming Languages</h2>
+            <div className="tech-grid">
+              {database.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  className="tech-card"
+                  variants={cardVariants}
+                  transition={{ duration: 0.8 }}
+                  whileHover={{ scale: 1.08 }}
+                >
+                  <img src={tech.image} alt={tech.alt} />
+                  <p>{tech.name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+
+        </motion.div>
+
+        {/* Right */}
+        <motion.div
+          className="tech-group-right"
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          {/* Technologies */}
+          <motion.div
+            className="tech-category"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <h2>Technologies</h2>
+            <div className="tech-grid">
+              {backend.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  className="tech-card"
+                  variants={cardVariants}
+                  transition={{ duration: 0.8 }}
+                  whileHover={{ scale: 1.08 }}
+                >
+                  <img src={tech.image} alt={tech.alt} />
+                  <p>{tech.name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+          {/* Tools */}
+          <motion.div
+            className="tech-category"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <h2>Tools</h2>
+            <div className="tech-grid">
+              {tools.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  className="tech-card"
+                  variants={cardVariants}
+                  transition={{ duration: 0.8 }}
+                  whileHover={{ scale: 1.08 }}
+                >
+                  <img src={tech.image} alt={tech.alt} />
+                  <p>{tech.name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
         </motion.div>
       </div>
 
-      {/* Tools */}
-      <motion.div
-        className="tech-category"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-      >
-        <h2>Tools</h2>
-        <div className="tech-grid">
-          {tools.map((tech, index) => (
-            <motion.div
-              key={index}
-              className="tech-card"
-              variants={cardVariants}
-              transition={{ duration: 0.8 }}
-              whileHover={{ scale: 1.08 }}
-            >
-              <img src={tech.image} alt={tech.alt} />
-              <p>{tech.name}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      
+         {/* Full-Stack */}
+          <motion.div
+            className="tech-category"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <h2>Full-Stack Development</h2>
+            <div className="tech-grid">
+              {frontend.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  className="tech-card"
+                  variants={cardVariants}
+                  transition={{ duration: 0.8 }}
+                  whileHover={{ scale: 1.08 }}
+                >
+                  <img src={tech.image} alt={tech.alt} />
+                  <p>{tech.name}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
     </div>
   );
 }
