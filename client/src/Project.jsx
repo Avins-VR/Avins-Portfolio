@@ -4,7 +4,6 @@ import Focusflowtask from './assets/Focusflowtask.png';
 import BlackjackGame from './assets/BlackjackGame.jpg';
 import InstagramClone from './assets/InstagramClone.jpg';
 import SafeRoute from './assets/SafeRoute.png';
-import AmbulancePredictor from './assets/Ambulance demend.jpeg';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
