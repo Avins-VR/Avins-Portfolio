@@ -52,7 +52,7 @@ function App() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.3 }}
                 >
-                  Software Engineer
+                  AI/ML Engineer
                 </motion.h3>
                 <motion.p
   initial={{ opacity: 0, y: 30 }}

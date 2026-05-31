@@ -577,15 +577,15 @@ button a:hover {
 
 .tech-category h2 {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 650;
     text-transform: uppercase;
-    letter-spacing: 1px;
 
     margin-bottom: 50px;
 
     text-align: center;
 
     color: #f1f1f1;
+
 
     position: relative;
 }
