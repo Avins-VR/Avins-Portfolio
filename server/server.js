@@ -15,7 +15,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 app.use(
   cors({
     origin: [
-      "https://avins-portfolio.netlify.app",
+      "https://avins.netlify.app",
       "http://localhost:5173"
     ],
     credentials: true,
