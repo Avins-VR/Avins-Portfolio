@@ -19,7 +19,7 @@ function Project() {
       description: "Engineered an AI-driven Smart Agriculture system using real-time weather data (Open-Meteo API), ML/DL models for pest detection, nutrient analysis, crop stage tracking, irrigation prediction, and soil moisture estimation using weather and crop data. Developed data-driven advisory system with AI recommendations and agriculture-focused LLM chatbot for farmer support. Designed interactive dashboard with real-time monitoring, historical analytics, crop health insights, and farm location tracking for smart decisions.",
       image: Smart_Agri_AI,
       tech: ['EfficientNet-B0','API','Random Forest'],
-      demo: "https://smart-agri-ai-dashboard.streamlit.app/",
+      demo: "https://smart-agri-ai-farm.netlify.app/",
       github: "https://github.com/Avins-VR/Smart-Agri-AI"
     },
     {
