@@ -61,7 +61,7 @@ function App() {
 >
   Passionate Artificial Intelligence & Data Science student aspiring to become a
   Machine Learning Engineer, with strong expertise in Machine Learning, Deep
-  Learning, and Computer Vision. I focus on developing intelligent,
+  Learning, Multimodal AI and Computer Vision. I focus on developing intelligent,
   data-driven systems that solve real-world problems and drive innovation.
   With working knowledge of Full-Stack Development, I can integrate AI models
   into scalable applications and build practical solutions that deliver real

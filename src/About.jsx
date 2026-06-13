@@ -128,7 +128,7 @@ function About() {
   icon: "bi bi-code-slash",
   title: "FULL-STACK DEVELOPMENT",
   desc: "Developing scalable web applications and integrating AI models into real-world systems",
-  tech: ["React", "Node.js", "Express.js", "MongoDB"],
+  tech: ["React", "Node.js", "Flask API", "MongoDB"],
 },
               
             ].map((skill, i) => (

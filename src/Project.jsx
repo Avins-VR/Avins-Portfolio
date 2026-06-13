@@ -36,7 +36,7 @@ function Project() {
       date: "2026",
       description: "Developed an RAG-based Intelligent PDF Learning Assistant enabling students to upload PDFs and receive structured explanations (What, Why, How, simplified terms, diagram flow) grounded document content. Implemented RAG pipeline with text extraction, chunking, embedding generation, and FAISS-based semantic retrieval for accurate context matching. Integrated LLM (Groq–LLaMA 3) to generate context-aware responses high relevance and reduced hallucination. Built for real-time queries and fast document retrieval.",
       image: RAG,
-      tech: ['Groq LLaMA 3', 'FAISS)'],
+      tech: ['Groq LLaMA 3', 'FAISS'],
       demo: "https://rag-learn-ai.streamlit.app/",
       github: "https://github.com/Avins-VR/RAG-Learn-AI"
     },

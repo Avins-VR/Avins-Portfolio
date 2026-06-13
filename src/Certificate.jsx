@@ -16,7 +16,7 @@ import Datascience from "./assets/Datascience.png";
 function Certificate() {
   const [certificates] = useState([
     {
-      title: "OCI AI Foundations",
+      title: "Oracle Cloud Infrastructure AI Foundations",
       issuer: "Oracle University ",
       image: OCIAIFoundation,
     },
