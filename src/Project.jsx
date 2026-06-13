@@ -16,7 +16,7 @@ function Project() {
      {
       title: "Smart Agri AI",
       date: "2026",
-      description: "Engineered an AI-driven Smart Agriculture system using real-time weather data (Open-Meteo API), ML/DL models for pest detection, nutrient analysis, crop stage tracking, irrigation prediction, and soil moisture estimation using weather and crop data. Developed data-driven advisory system with AI recommendations and agriculture-focused LLM chatbot for farmer support. Designed interactive dashboard with real-time monitoring, historical analytics, crop health insights, and farm location tracking for smart decisions.",
+      description: "Engineered an AI-powered Smart Agriculture platform using real-time weather data (Open-Meteo API) and ML/DL models for soil moisture prediction, NPK estimation, pest detection, crop stage analysis, irrigation recommendations, and crop health evaluation. Developed a multi-user, multi-land management system with farm dashboards, AI-driven recommendations, and an agriculture-focused LLM chatbot. Designed an interactive dashboard for real-time monitoring, historical analytics, crop health insights, and location-based farm tracking for data-driven decisions.",
       image: Smart_Agri_AI,
       tech: ['EfficientNet-B0','API','Random Forest'],
       demo: "https://smart-agri-ai-farm.netlify.app/",
