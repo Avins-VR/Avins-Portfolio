@@ -121,8 +121,14 @@ export const CardItem = ({
     if (isMouseEntered) {
       ref.current.style.transform = `translateX(${translateX}) translateY(${translateY}) translateZ(${translateZ}) rotateX(${rotateX}) rotateY(${rotateY}) rotateZ(${rotateZ})`;
     } else {
-      ref.current.style.transform =
-        "translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0)";
+      ref.current.style.transform = `
+        translateX(${translateX})
+        translateY(${translateY})
+        translateZ(${translateZ})
+        rotateX(${rotateX})
+        rotateY(${rotateY})
+        rotateZ(${rotateZ})
+      `;
     }
   }, [isMouseEntered]);
 
@@ -131,7 +137,7 @@ export const CardItem = ({
       ref={ref}
       className={cn("w-fit transition duration-150 ease-out", className)}
       style={{
-        pointerEvents: interactive ? "auto" : "none", 
+        pointerEvents: "auto",
       }}
       {...rest}
     >

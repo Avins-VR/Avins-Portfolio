@@ -91,29 +91,39 @@ function Certificate() {
       <motion.div
         className="certificate-grid"
         initial="hidden"
-        whileInView="show"
+        animate="show"
         variants={{
           hidden: {},
           show: {
             transition: {
-              staggerChildren: 0.2,
+              staggerChildren: 0.15,
             },
           },
         }}
-        viewport={{ once: true, amount: 0.3 }}
       >
         {certificates.map((certificate, index) => (
           <motion.div
             key={index}
             variants={{
-              hidden: { opacity: 0, y: 50, scale: 0.9 },
-              show: { opacity: 1, y: 0, scale: 1 },
+              hidden: {
+                opacity: 0,
+                y: 50,
+                scale: 0.9,
+              },
+              show: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+              },
             }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+            }}
           >
             <CardContainer className="certificate-card">
               <CardBody className="certificate-card-body">
-                <CardItem translateZ="50px">
+                <CardItem>
                   <motion.img
                     src={certificate.image}
                     alt={certificate.title}
