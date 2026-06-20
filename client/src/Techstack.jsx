@@ -22,6 +22,7 @@ import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
 import Git from "./assets/git.png";
 import GitHub from "./assets/github.png";
+import Groq from "./assets/Groq.png";
 import tenseorflow from "./assets/tenseorflow.png";
 import Numpy from "./assets/numpy.png";
 import Pandas from "./assets/pandas.png";
@@ -44,6 +45,7 @@ function Techstack() {
     {name: "LLM", image: llm, alt: "Large Language Models" },
     { name: "Computer Vision", image: cv, alt: "Computer Vision" },
     { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
+    {name: "Groq API", image:Groq , alt:"Groq API"}
   ]);
   const [database] = useState([
     { name: "Python", image: Python, alt: "Python" },
