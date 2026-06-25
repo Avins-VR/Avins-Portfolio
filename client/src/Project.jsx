@@ -9,6 +9,7 @@ import Emotion from './assets/emotion dedection.jpeg';
 import AI_Potato from './assets/Potato leaf diesese.jpg';
 import Smart_Agri_AI from './assets/Smart Agri AI.png';
 import RAG from './assets/RAG.jpg';
+import YouTube_Learn_AI from './assets/Intelligent YouTube Learn AI.webp'
 import Nutrient_Deficiency from './assets/Nutrient Deficiency.avif';
 
 function Project() {
@@ -41,9 +42,18 @@ function Project() {
       github: "https://github.com/Avins-VR/RAG-Learn-AI"
     },
     {
+      title: "Intelligent YouTube Learn AI",
+      date: "2026",
+      description: "Developed an AI-powered Educational Video Learning Assistant that converts YouTube lectures into structured summaries, key notes, interactive concept maps, downloadable PDF study materials, and difficulty-based MCQs. Implemented an end-to-end RAG pipeline using transcript extraction, embeddings, ChromaDB, and Groq LLaMA 3 for context-aware doubt clarification, personalized learning recommendations, and accurate video-specific responses. Built an interactive Streamlit application for real-time AI-assisted learning, revision, and self-assessment, significantly reducing learning time.",
+      image: YouTube_Learn_AI,
+      tech: ['RAG','Groq LLaMA 3', 'ChromaDB'],
+      demo: "https://intelligent-youtube-learn-ai.streamlit.app/",
+      github: "https://github.com/Avins-VR/Intelligent-YouTube-Learn-AI"
+    },
+    {
       title:"AI-powered Car Parking Spot Dedection ",
       date:"2025",
-      description: "Smart Parking System is a computer vision-based solution that detects parking occupancy from images and video using mask-based classification, enabling real-time space identification, reducing search time, and minimizing congestion.",
+      description: "Smart Parking System is a computer vision-based solution that detects parking space availability using images and video streams. It uses mask-based classification techniques to identify occupied and vacant parking slots in real time.The system helps drivers quickly find available spaces, reducing parking search time and traffic congestion.It enables automated parking monitoring, efficient space utilization, and improved parking management.The solution supports smart city applications by providing accurate, scalable, and cost-effective parking solutions.",
       image:parking,
       tech: ['OpenCV','SVM','YOLO'],
       demo: "https://github.com/Avins-VR/Car-Parking-spot-Dedection-Open-CV-",
@@ -52,7 +62,7 @@ function Project() {
     {
       title: "SafeRoute",
       date: "2025",
-      description: "SafeRoute is a personal safety app focused on smart travel, featuring area safety checks, live location sharing, and SOS alerts for safer journeys. It helps users assess surroundings using lighting, crowd density, and nearby emergency data, providing safer route suggestions and real-time decision-making.",
+      description: "SafeRoute is a personal safety application designed to provide secure and intelligent travel assistance through smart navigation features.It offers area safety analysis, live location sharing, and instant SOS alerts to improve user security during journeys.The app evaluates surroundings using factors such as lighting conditions, crowd density, and nearby emergency resources.It provides safer route recommendations and real-time safety insights to help users make informed travel decisions.SafeRoute enhances personal security by combining technology, location intelligence, and emergency support for safer mobility.",
       image: SafeRoute,
       tech: ['Tailwind CSS', 'MERN Stack', 'API Integration'],
       demo: "https://saferoute-blze.onrender.com/",
@@ -97,7 +107,7 @@ function Project() {
     {
       title: "Blackjack Game",
       date: "2024",
-      description: "Blackjack Game is an interactive project that recreates the classic casino card game with dynamic animations, real-time score tracking, and responsive gameplay for an engaging user experience.",
+      description: "Blackjack Game is an interactive project that recreates the classic casino card game with dynamic animations, real-time score tracking, responsive gameplay, and intuitive game logic, delivering an engaging and immersive user experience.",
       image: BlackjackGame,
       tech: ['HTML', 'CSS', 'JavaScript'],
       demo: "https://avins-vr.github.io/Blackjack-game/Blackjack/Blackjack.html",
