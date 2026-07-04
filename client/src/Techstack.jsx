@@ -8,6 +8,7 @@ import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
 import Mern from "./assets/Mern.png";
 import Nlp from "./assets/Nlp.png";
+import yolo from "./assets/yolo.png";
 import MistralAPI from "./assets/Mistral API.png";
 import cnn from "./assets/cnn.png";
 import ann from "./assets/Ann.png";
@@ -28,6 +29,7 @@ import Numpy from "./assets/numpy.png";
 import Pandas from "./assets/pandas.png";
 import roboflow from "./assets/Roboflow.png";
 import scikitlearn from "./assets/scikit-learn.png";
+import opencv from "./assets/open cv.png";
 import ststreamlit from "./assets/streamlitlogo.png";
 function Techstack() {
   const [frontend] = useState([
@@ -40,6 +42,7 @@ function Techstack() {
   const [backend] = useState([
     { name: "ANN", image: ann, alt: "Artificial Neural Network" },
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
+    { name: "YOLOv8", image: yolo, alt: "YOLO" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
     {name: "RAG", image: rag, alt: "Retrieval-Augmented Generation" },
     {name: "LLM", image: llm, alt: "Large Language Models" },
@@ -65,6 +68,7 @@ function Techstack() {
     { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Pandas", image:Pandas, alt:"Pandas" },
     {name:"Scikit-Learn", image:scikitlearn, alt:"Scikit-Learn" },
+    {name:"Open CV", image:opencv, alt:"OpenCV" },
     {name:"Streamlit", image:ststreamlit, alt:"Streamlit" },
     {name:"Roboflow", image:roboflow, alt:"Roboflow" },
   ]);
