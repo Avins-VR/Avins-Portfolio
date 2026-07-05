@@ -17,7 +17,7 @@ import llm from "./assets/LLM.png";
 import sql from "./assets/sql.png";
 import ml from "./assets/ml.jpeg";
 import multimodal from "./assets/multimodal.png";
-import datascience from "./assets/data science.jpg";
+import datascience from "./assets/data science.png";
 import prompt from "./assets/Prompt.png";
 import dl from "./assets/Deep Learning.png";
 import cv from "./assets/cv.png";
