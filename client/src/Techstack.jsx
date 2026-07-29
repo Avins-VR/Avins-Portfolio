@@ -31,6 +31,7 @@ import roboflow from "./assets/Roboflow.png";
 import scikitlearn from "./assets/scikit-learn.png";
 import opencv from "./assets/open cv.png";
 import ststreamlit from "./assets/streamlitlogo.png";
+import AWS from "./assets/AWS.png";
 function Techstack() {
   const [frontend] = useState([
     { name: "HTML", image: HTML, alt: "HTML" },
@@ -71,6 +72,7 @@ function Techstack() {
     {name:"Open CV", image:opencv, alt:"OpenCV" },
     {name:"Streamlit", image:ststreamlit, alt:"Streamlit" },
     {name:"Roboflow", image:roboflow, alt:"Roboflow" },
+    {name: "AWS", image:AWS, alt:"AWS"}
   ]);
 
   // Animation Variants
