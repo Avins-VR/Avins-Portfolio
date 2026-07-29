@@ -104,7 +104,7 @@ function App() {
                 whileTap={{ scale: 0.95 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/1qV1jCHEuitULQkTMPYEpCorlkhdnH5HA/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1qV1jCHEuitULQkTMPYEpCorlkhdnH5HA/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
