@@ -73,7 +73,7 @@ function About() {
 <p>
   With a solid foundation in Python, SQL, and modern AI frameworks, I specialize in 
   building and training machine learning, deep learning and Multimodal AI models for applications 
-  such as prediction systems, computer vision solutions, and intelligent automation. 
+  such as prediction systems, computer vision solutions, and Retrieval-Augmented Generation. 
   I also have working knowledge of full-stack development, which helps me integrate 
   AI models into scalable applications and deploy practical real-world solutions. 
   I continuously explore emerging technologies in AI to strengthen my expertise and 
@@ -125,10 +125,10 @@ function About() {
   tech: ["CNN", "Multimodal Fusion", "Data Fusion", "NLP"]
 },
 {
-  icon: "bi bi-code-slash",
-  title: "FULL-STACK DEVELOPMENT",
-  desc: "Developing scalable web applications and integrating AI models into real-world systems",
-  tech: ["React", "Node.js", "Flask API", "MongoDB"],
+  icon: "bi bi-database-fill-gear",
+  title: "RETRIEVAL AUGMENTED GENERATION",
+  desc: "Building intelligent AI systems that retrieve relevant knowledge and generate accurate, context-aware responses using large language models.",
+  tech: ["RAG", "Chroma DB", "FAISS", "LLMs"],
 },
               
             ].map((skill, i) => (
