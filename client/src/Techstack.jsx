@@ -11,7 +11,7 @@ import Nlp from "./assets/Nlp.png";
 import yolo from "./assets/yolo.png";
 import MistralAPI from "./assets/Mistral API.png";
 import cnn from "./assets/cnn.png";
-import ann from "./assets/Ann.png";
+import ann from "./assets/ANN.png";
 import rag from "./assets/rag-icon.png";
 import llm from "./assets/LLM.png";
 import sql from "./assets/sql.png";
@@ -31,6 +31,7 @@ import roboflow from "./assets/Roboflow.png";
 import scikitlearn from "./assets/scikit-learn.png";
 import opencv from "./assets/open cv.png";
 import ststreamlit from "./assets/streamlitlogo.png";
+import kaggle from "./assets/kaggle.png";
 import AWS from "./assets/AWS.png";
 function Techstack() {
   const [frontend] = useState([
@@ -43,12 +44,12 @@ function Techstack() {
   const [backend] = useState([
     { name: "ANN", image: ann, alt: "Artificial Neural Network" },
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
-    { name: "YOLOv8", image: yolo, alt: "YOLO" },
+    { name: "YOLO", image: yolo, alt: "YOLO" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
 
     {name: "LLM", image: llm, alt: "Large Language Models" },
     { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
-    {name: "Groq API", image:Groq , alt:"Groq API"}
+    {name: "Groq Llama API", image:Groq , alt:"Groq Llama API"}
   ]);
   const [database] = useState([
     { name: "Python", image: Python, alt: "Python" },
@@ -74,7 +75,8 @@ function Techstack() {
     {name:"Open CV", image:opencv, alt:"OpenCV" },
     {name:"Streamlit", image:ststreamlit, alt:"Streamlit" },
     {name:"Roboflow", image:roboflow, alt:"Roboflow" },
-    {name: "AWS", image:AWS, alt:"AWS"}
+    {name:"Kaggle",image:kaggle, alt:"Kaggle" },
+    {name: "AWS", image:AWS, alt:"AWS"} 
   ]);
 
   // Animation Variants
