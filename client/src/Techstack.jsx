@@ -45,9 +45,8 @@ function Techstack() {
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
     { name: "YOLOv8", image: yolo, alt: "YOLO" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
-    {name: "RAG", image: rag, alt: "Retrieval-Augmented Generation" },
+
     {name: "LLM", image: llm, alt: "Large Language Models" },
-    { name: "Computer Vision", image: cv, alt: "Computer Vision" },
     { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
     {name: "Groq API", image:Groq , alt:"Groq API"}
   ]);
@@ -60,7 +59,10 @@ function Techstack() {
     { name: "Deep Learning", image: dl, alt: "Deep Learning" },
     { name: "Multimodal AI", image: multimodal, alt: "Multimodal AI" },
     { name: "Data Science", image: datascience, alt: "Data Science" },
+    { name: "Computer Vision", image: cv, alt: "Computer Vision" },
+    {name: "RAG", image: rag, alt: "Retrieval-Augmented Generation" },
     { name: "Prompt Engineering", image: prompt, alt: "Prompt Engineering" },
+    
   ]);
   const [tools] = useState([
     { name: "Git", image: Git, alt: "Git" },
