@@ -74,7 +74,7 @@ function About() {
   With a solid foundation in Python, SQL, and modern AI frameworks, I specialize in 
   building and training machine learning, deep learning and Multimodal AI models for applications 
   such as prediction systems, computer vision solutions, and Retrieval-Augmented Generation. 
-  I also have working knowledge of full-stack development, which helps me integrate 
+  I also have working knowledge of Web Technologies, which helps me integrate 
   AI models into scalable applications and deploy practical real-world solutions. 
   I continuously explore emerging technologies in AI to strengthen my expertise and 
   build innovative, impactful systems that address meaningful challenges.

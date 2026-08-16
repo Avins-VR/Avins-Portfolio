@@ -63,7 +63,7 @@ function App() {
   Machine Learning Engineer, with strong expertise in Machine Learning, Deep
   Learning, Computer Vision and RAG. I focus on developing intelligent,
   data-driven systems that solve real-world problems and drive innovation.
-  With working knowledge of Full-Stack Development, I can integrate AI models
+  With working knowledge of Web Technologies, I can integrate AI models
   into scalable applications and build practical solutions that deliver real
   impact.
 </motion.p>
