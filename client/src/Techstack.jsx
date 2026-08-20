@@ -14,6 +14,7 @@ import cnn from "./assets/cnn.png";
 import ann from "./assets/Ann.png";
 import rag from "./assets/rag-icon.png";
 import llm from "./assets/LLM.png";
+import DataAnnotation from "./assets/Data Annotation.png";
 import sql from "./assets/sql.png";
 import ml from "./assets/ml.jpeg";
 import multimodal from "./assets/multimodal.png";
@@ -46,8 +47,8 @@ function Techstack() {
     { name: "CNN", image: cnn, alt: "Convolutional Neural Network" },
     { name: "YOLO", image: yolo, alt: "YOLO" },
     { name: "NLP", image: Nlp, alt: "Natural Language Processing" },
-
     {name: "LLM", image: llm, alt: "Large Language Models" },
+    { name: "Data Annotation", image: DataAnnotation, alt: "Data Annotation" },
     { name: "Mistral API", image: MistralAPI, alt: "Mistral API" },
     {name: "Groq Llama API", image:Groq , alt:"Groq Llama API"}
   ]);
