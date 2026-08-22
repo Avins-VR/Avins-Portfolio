@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import coder from "./assets/coder.webp";
+import coder from "./assets/coder.png";
 import "./index.css";
 
 function About() {

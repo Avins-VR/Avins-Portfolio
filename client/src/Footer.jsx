@@ -68,12 +68,12 @@ function Footer() {
             <i className="bi bi-linkedin text-2xl"></i>
           </motion.a>
           <motion.a 
-            href="http://twitter.com/" 
+            href="mailto:avins2005@gmail.com" 
             target="_blank" 
             rel="noreferrer"
             whileHover={iconHover}
           >
-            <i className="bi bi-twitter text-2xl"></i>
+             <i className="bi bi-envelope"></i>
           </motion.a>
         </motion.div>
       </motion.div>

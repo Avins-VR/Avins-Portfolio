@@ -135,7 +135,7 @@ function Certificate() {
 
                 <CardItem translateZ="30px">
                   <motion.h4
-                    whileHover={{ color: "#6c63ff", scale: 1.05 }}
+                    whileHover={{ color: "#819f97", scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 250 }}
                   >
                     {certificate.title}

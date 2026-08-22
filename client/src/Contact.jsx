@@ -183,7 +183,7 @@ await axios.post(`${API_URL}/send-message`, formData, {
                 <button className="github">📂 Github</button>
               </motion.a>
               <motion.a href="https://www.google.com/maps/dir//Men's+hostel,+St+Joseph's+College+Of+Engineering,+Boys+Hostel,+JEPPIAAR+ENGINEERING+COLLEGE,+Kamaraj+Nagar,+Semmancheri,+Chennai,+Greater+Chennai,+Tamil+Nadu+600119/@12.867002,80.2152035,505m/data=!3m1!1e3!4m12!1m2!2m1!1sSt+Joseph's+College+Of+Engineering++Boys+Hostel!4m8!1m0!1m5!1m1!1s0x3a525bb16b5bed6d:0xfeeb1c36d6625c09!2m2!1d80.2151392!2d12.8677153!3e3?entry=ttu&g_ep=EgoyMDI2MDcyNi4wIKXMDSoASAFQAw%3D%3D" whileHover={{ scale: 1.1 }}>
-                <button className="location">📌 Location</button>
+                <button className="location">📍 Location</button>
               </motion.a>
             </div>
           </motion.div>
