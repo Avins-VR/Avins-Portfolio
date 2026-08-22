@@ -6,7 +6,6 @@ import InstagramClone from './assets/InstagramClone.jpg';
 import SafeRoute from './assets/SafeRoute.png';
 import parking from './assets/parking dedection.jpg';
 import Emotion from './assets/emotion dedection.jpeg';
-import AI_Potato from './assets/Potato leaf diesese.jpg';
 import Smart_Agri_AI from './assets/Smart Agri AI.png';
 import RAG from './assets/RAG.jpg';
 import YouTube_Learn_AI from './assets/Intelligent YouTube Learn AI.webp'
@@ -76,15 +75,6 @@ function Project() {
       tech: ['Python', 'OpenCV','TensorFlow','FER'],
       demo: "https://ai-emotisense.streamlit.app/",
       github: "https://github.com/Avins-VR/EmotiSense"
-    },
-    {
-      title: "AI-Based Potato Leaf Disease Classification",
-      date: "2026",
-      description: "Potato Leaf Disease Classification is an AI-powered system that identifies Early Blight, Late Blight, and Healthy potato leaves using CNN-based deep learning model for early and accurate detection ,enabling timely intervention and improved crop management decisions.",
-      image: AI_Potato,
-      tech: ['TensorFlow', 'Matplotlib','CNN'],
-      demo: "https://github.com/Avins-VR/Potato-Disease-Classification/blob/main/Potato%20Disease%20Classification.ipynb",
-      github: "https://github.com/Avins-VR/Potato-Disease-Classification"
     },
     {
       title: "Focusflow Tasks",
