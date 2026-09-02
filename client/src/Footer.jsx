@@ -68,7 +68,7 @@ function Footer() {
             <i className="bi bi-linkedin text-2xl"></i>
           </motion.a>
           <motion.a 
-            href="mailto:avins2005@gmail.com" 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=avins2005@gmail.com" 
             target="_blank" 
             rel="noreferrer"
             whileHover={iconHover}

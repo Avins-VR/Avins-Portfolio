@@ -137,7 +137,7 @@ function App() {
                 <i className="bi bi-github"></i>
               </motion.a>
               <motion.a
-                href="mailto:avins2005@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=avins2005@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2 }}
