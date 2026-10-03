@@ -27,7 +27,7 @@ function Project() {
       date: "2026",
       description: "Formulated a multimodal AI system combining CNN-based leaf analysis with soil (pH, moisture, NPK) and weather data to detect nutrient deficiencies and severity. Introduced DSEE to capture spatial progression patterns, enhancing feature representation. Built a hybrid data-fusion model delivering high-confidence predictions with fertilizer recommendations, and integrated an LLM-based chatbot to enhance user interaction and decision support, improving usability and practical adoption in real-world farming scenarios.",
       image: Nutrient_Deficiency,
-      tech: ['Multimodal AI', 'Mistral LLM','DSEE'],
+      tech: ['Multimodal AI', 'Groq LLM','DSEE'],
       demo: "https://multimodal-nutriai.streamlit.app/",
       github: "https://github.com/Avins-VR/Multimodal-NutriAI"
     },
