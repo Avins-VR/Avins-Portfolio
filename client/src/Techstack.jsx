@@ -6,7 +6,8 @@ import JS from "./assets/JS.png";
 import HTML from "./assets/HTML.png";
 import CSS from "./assets/CSS.png";
 import tailwind from "./assets/tailwind.png";
-import Mern from "./assets/Mern.png";
+import react from "./assets/react.png";
+import mongodb from "./assets/mongodb.png";
 import Nlp from "./assets/Nlp.png";
 import yolo from "./assets/yolo.png";
 import MistralAPI from "./assets/Mistral API.png";
@@ -41,7 +42,8 @@ function Techstack() {
     { name: "CSS", image: CSS, alt: "CSS" },
     { name: "JavaScript", image: JS, alt: "JavaScript" },
     { name: "Tailwind CSS", image: tailwind, alt: "Tailwind CSS" },
-    { name: "MERN Stack", image: Mern, alt: "MERN Stack" },
+    { name: "React", image: react, alt: "React" },
+    { name: "MongoDB", image: mongodb, alt: "MongoDB" },
   ]);
   const [backend] = useState([
     { name: "ANN", image: ann, alt: "Artificial Neural Network" },
