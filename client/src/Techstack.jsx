@@ -34,6 +34,7 @@ import opencv from "./assets/open cv.png";
 import ststreamlit from "./assets/streamlitlogo.png";
 import kaggle from "./assets/kaggle.png";
 import AWS from "./assets/AWS.png";
+import gitlab from "./assets/gitlab.png";
 function Techstack() {
   const [frontend] = useState([
     { name: "HTML", image: HTML, alt: "HTML" },
@@ -69,6 +70,7 @@ function Techstack() {
   const [tools] = useState([
     { name: "Git", image: Git, alt: "Git" },
     { name: "GitHub", image: GitHub, alt: "GitHub" },
+    { name: "GitLab", image: gitlab, alt: "GitLab" },
     { name: "TensorFlow", image: tenseorflow, alt: "TensorFlow" },
     { name: "NumPy", image: Numpy, alt: "NumPy" },
     {name:"Pandas", image:Pandas, alt:"Pandas" },
