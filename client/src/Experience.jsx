@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import InternImage from './assets/Intern.png';
 import SkyAstrall from './assets/SkyAstrall Intern.png';
+import Solinas_Intern from './assets/Solinas Intern.png';
 
 function Experience() {
   const [experiences] = useState([
     {
-      Role: "UI/UX Intern → Srishti Innovative",
-      duration: "1-week Internship",
+      Role: "AI Engineer Intern → Solinas",
+      duration: "6-Month Internship",
       description:
-        "Gained hands-on experience in user interface and user experience design by working on real-world layouts and interactive prototypes. I worked primarily with Figma, focusing on creating clean, user-friendly interfaces with strong attention to usability, visual hierarchy, and design consistency. This experience helped me understand practical design workflows and sharpened my skills in wireframing and user-centered design.",
-      image: InternImage,
-      Month: "December 2024",
+        "I am actively involved in developing AI-driven solutions, specializing in Computer Vision, Deep Learning, and Python-based automation. I have worked on building an end-to-end pipeline defect detection system using YOLO-based object detection to accurately identify and localize 15 different classes of pipeline defects. My responsibilities include preparing, annotating, and managing Computer Vision datasets, as well as training, evaluating, and optimizing deep learning models to enhance detection accuracy and efficiency. Additionally, I developed Python-based automation for Pipeline Insight Automation, enabling the automatic generation of defect descriptions and actionable recommendations based on defect codes, names, counts, and severity levels. Currently, I am collaborating with cross-functional development teams on High-Level Design (HLD) projects, contributing to system architecture, technical implementation, performance optimization, and the development of efficient, scalable AI-powered solutions for real-world industrial applications.",
+      image: Solinas_Intern,
+      Month: "Aug 2026 - Present",
     },
     {
       Role: "Frontend Developer Intern → SkyAstrall",
@@ -20,6 +21,14 @@ function Experience() {
         "Frontend Developer internship utilizing React, Tailwind CSS, and JavaScript. Actively contributed to multiple real-time client projects, developing responsive and dynamic user interfaces. Gained strong practical web development experience while working in a collaborative team environment. Enhanced teamwork, communication, and problem-solving skills. Applied modern frontend development practices to deliver high-quality project outcomes.",
       image: SkyAstrall,
       Month: "July 2025 - Aug 2025",
+    },
+    {
+      Role: "UI/UX Intern → Srishti Innovative",
+      duration: "1-week Internship",
+      description:
+        "Gained hands-on experience in user interface and user experience design by working on real-world layouts and interactive prototypes. I worked primarily with Figma, focusing on creating clean, user-friendly interfaces with strong attention to usability, visual hierarchy, and design consistency. This experience helped me understand practical design workflows and sharpened my skills in wireframing and user-centered design.",
+      image: InternImage,
+      Month: "December 2024",
     }
   ]);
 

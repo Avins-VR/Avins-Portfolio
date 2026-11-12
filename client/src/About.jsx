@@ -65,7 +65,7 @@ function About() {
             <h2>MY STORY</h2>
             <p>
   Passionate AI & Data Science student aspiring to become a Machine Learning Engineer, 
-  with strong expertise in Machine Learning, Deep Learning, Multimodal AI and Computer Vision. 
+  with strong expertise in Machine Learning, Deep Learning, Computer Vision and RAG. 
   I focus on developing intelligent systems and AI-driven solutions that solve 
   real-world problems using data-driven approaches and advanced models.
 </p>
@@ -119,10 +119,10 @@ function About() {
   tech: ["TensorFlow", "Keras", "CNN", "Neural Networks"],
 },
 {
-  icon: "bi bi-diagram-3",
-  title: "MULTIMODAL AI",
-  desc: "Developing multimodal AI systems by fusing visual and structured data to deliver accurate predictions and intelligent decision-making",
-  tech: ["CNN", "Multimodal Fusion", "Data Fusion", "NLP"]
+  icon: "bi bi-eye",
+  title: "COMPUTER VISION",
+  desc: "Developing intelligent visual recognition and image processing solutions using Computer Vision techniques",
+  tech: ["YOLO", "Annotation", "Object Detection", "OpenCV"],
 },
 {
   icon: "bi bi-database-fill-gear",
